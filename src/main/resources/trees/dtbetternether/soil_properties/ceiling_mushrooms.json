@@ -1,0 +1,5 @@
+{
+  "primitive_soil": "betternether:ceiling_mushrooms",
+  "acceptable_soils": ["fungus_like", "nether_soil_like"],
+  "substitute_soil": "netherrack"
+}
