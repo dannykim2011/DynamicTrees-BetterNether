@@ -1,0 +1,13 @@
+[
+  {
+    "__comment":"Replace BetterNether static tree and fungus features.",
+    "select":{"name":"betternether:.*","tag":"#minecraft:is_nether"},
+    "cancellers":{"type":"tree","namespace":"betternether"}
+  },
+  {
+    "__comment":"Replace BetterNether large mushroom features when DT Plus is present.",
+    "only_if_loaded":"dynamictreesplus",
+    "select":{"names_or":["betternether:nether_mushroom_forest","betternether:old_fungiwoods"]},
+    "cancellers":{"type":"mushroom","namespace":"betternether"}
+  }
+]

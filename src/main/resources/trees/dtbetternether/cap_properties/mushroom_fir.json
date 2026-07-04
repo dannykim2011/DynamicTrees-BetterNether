@@ -1,0 +1,6 @@
+{
+  "only_if_loaded":"dynamictreesplus",
+  "primitive_cap":"betternether:mushroom_fir_stem",
+  "material_color":"COLOR_BLUE",
+  "mushroom_item":"betternether:mushroom_fir_sapling"
+}
