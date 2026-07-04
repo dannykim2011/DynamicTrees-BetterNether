@@ -1,11 +1,28 @@
-# Dynamic Trees for Better Nether
+# Dynamic Trees–Better Nether
 
-Forge 1.20.1 compatibility addon for BetterNether.
+Bring Dynamic Trees support to the trees and giant fungi added by BetterNether.
+
+This addon integrates BetterNether's vegetation with Dynamic Trees, allowing
+supported species to grow, branch, and generate using Dynamic Trees' mechanics
+while preserving their distinctive shapes and behavior.
+
+## Features
+
+🌳 **Dynamic Trees compatibility for BetterNether** – Adds dynamically growing
+versions of supported BetterNether species.
+
+🌿 **Custom growth and world generation** – Preserves each species' characteristic
+height, canopy, branching, and biome placement.
+
+🍄 **Optional giant fungi support** – Enables dynamic BetterNether fungi when
+Dynamic Trees Plus is installed.
+
+⚡ **Lightweight compatibility addon** – Integrates directly with Dynamic Trees
+without requiring Dynamic Trees Addon Lib.
 
 ## Requirements
 
-- Dynamic Trees 1.4.11+
-- BetterNether Forge 20.0.10+
-- Dynamic Trees Plus 1.2.2+ is recommended and optional. It enables Mushroom Fir and the dynamic red and brown giant mushrooms.
+* Dynamic Trees
+* BetterNether Neoforge
+* Dynamic Trees Plus (optional, recommended for giant fungi)
 
-All BetterNether tree growth logic is implemented by this addon; Dynamic Trees Addon Lib is not used.
