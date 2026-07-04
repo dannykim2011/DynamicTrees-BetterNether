@@ -1,0 +1,23 @@
+package com.dannykim.dtbetternether.systems.mushroom;
+
+import com.dannykim.dtbetternether.DynamicTreesBetterNether;
+import com.ferreusveritas.dynamictrees.api.registry.RegistryEvent;
+import com.ferreusveritas.dynamictreesplus.systems.mushroomlogic.shapekits.MushroomShapeKit;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+
+/** This class is loaded only when Dynamic Trees Plus is present. */
+public final class DTPlusRegistries {
+    private static final MushroomShapeKit RED =
+            new NetherRedMushroomShape(DynamicTreesBetterNether.location("nether_red_mushroom"));
+    private static final MushroomShapeKit BROWN =
+            new NetherBrownMushroomShape(DynamicTreesBetterNether.location("nether_brown_mushroom"));
+    private static final MushroomShapeKit MUSHROOM_FIR =
+            new MushroomFirShape(DynamicTreesBetterNether.location("mushroom_fir"));
+
+    private DTPlusRegistries() {}
+
+    @SubscribeEvent
+    public static void register(final RegistryEvent<MushroomShapeKit> event) {
+        event.getRegistry().registerAll(RED, BROWN, MUSHROOM_FIR);
+    }
+}
