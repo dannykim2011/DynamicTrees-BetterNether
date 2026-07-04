@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "dtbetternether:item/nether_brown_mushroom_seed"
+  }
+}

@@ -16,6 +16,7 @@ public final class EnglishLanguageProvider extends LanguageProvider {
         add("item.dtbetternether.nether_sakura_seed", "Nether Sakura Seed");
         add("item.dtbetternether.nether_brown_mushroom_seed", "Nether Brown Mushroom Spore");
         add("item.dtbetternether.nether_red_mushroom_seed", "Nether Red Mushroom Spore");
+        add("item.dtbetternether.old_willow_seed", "Old Nether Willow Inflorescence");
         add("item.dtbetternether.rubeus_seed", "Rubeus Cone");
         add("item.dtbetternether.wart_seed", "Wart Spore Gall");
         add("item.dtbetternether.willow_seed", "Nether Willow Inflorescence");
