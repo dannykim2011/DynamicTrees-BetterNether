@@ -1,5 +1,6 @@
 [
   {"select":{"name":"betternether:nether_swampland"},"apply":{"species":"dtbetternether:willow","density":[0.7],"chance":0.82,"forestness":1.0}},
+  {"select":{"name":"betternether:nether_swampland_terraces"},"apply":{"species":"dtbetternether:willow","density":[0.62],"chance":0.78,"forestness":0.9}},
   {"select":{"name":"betternether:old_swampland"},"apply":{"species":{"random":{"dtbetternether:willow":2,"dtbetternether:old_willow":3}},"density":[0.85],"chance":0.9,"forestness":1.0}},
   {"select":{"names_or":["betternether:wart_forest","betternether:wart_forest_edge"]},"apply":{"species":"dtbetternether:wart","density":[0.8],"chance":0.9,"forestness":1.0}},
   {"select":{"name":"betternether:nether_jungle"},"apply":{"species":"dtbetternether:rubeus","density":[0.75],"chance":0.88,"forestness":1.0}},
