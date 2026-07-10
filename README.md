@@ -1,54 +1,25 @@
-# \# Dynamic Trees–Better Nether
+# Dynamic Trees–Better Nether
 
-# 
+Bring Dynamic Trees support to the trees added by BetterNether.
 
-# Bring Dynamic Trees support to the trees and giant fungi added by BetterNether.
+This addon integrates BetterNether's vegetation with Dynamic Trees, allowing
+supported species to grow, branch, and generate using Dynamic Trees' mechanics
+while preserving their distinctive shapes and behavior.
 
-# 
+## Features
 
-# This addon integrates BetterNether's vegetation with Dynamic Trees, allowing
+🌳 **Dynamic Trees compatibility for BetterNether** – Adds dynamically growing
+versions of supported BetterNether species.
 
-# supported species to grow, branch, and generate using Dynamic Trees' mechanics
+🌿 **Custom growth and world generation** – Preserves each species' characteristic
+height, canopy, branching, and biome placement.
 
-# while preserving their distinctive shapes and behavior.
+⚡ **Lightweight compatibility addon** – Integrates directly with Dynamic Trees
+without requiring Dynamic Trees Addon Lib.
 
-# 
+## Requirements
 
-# \## Features
-
-# 
-
-# 🌳 \*\*Dynamic Trees compatibility for BetterNether\*\* – Adds dynamically growing
-
-# versions of supported BetterNether species.
-
-# 
-
-# 🌿 \*\*Custom growth and world generation\*\* – Preserves each species' characteristic
-
-# height, canopy, branching, and biome placement.
-
-# 
-
-# 🍄 \*\*Dynamic giant fungi support\*\* – Integrates BetterNether's giant fungi with
-
-# Dynamic Trees Plus for dynamic growth and world generation.
-
-# 
-
-# 🌎 \*\*Faithful BetterNether integration\*\* – Maintains BetterNether's unique
-
-# vegetation while seamlessly integrating with Dynamic Trees.
-
-# 
-
-# \## Requirements
-
-# 
-
-# \* Dynamic Trees
-
-# \* BetterNether NeoForge
-
-# \* Dynamic Trees Plus
+* Dynamic Trees
+* BetterNether Neoforge
+* Dynamic Trees Plus
 
