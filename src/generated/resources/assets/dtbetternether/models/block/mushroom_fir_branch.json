@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "betternether:block/mushroom_fir_bark",
+    "rings": "betternether:block/mushroom_fir_log_top"
+  }
+}

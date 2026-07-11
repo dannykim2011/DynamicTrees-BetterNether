@@ -1,11 +1,16 @@
 package com.dannykim.dtbetternether.systems;
 
 import com.dannykim.dtbetternether.DynamicTreesBetterNether;
-import com.dannykim.dtbetternether.data.EnglishLanguageProvider;
 import com.ferreusveritas.dynamictrees.api.registry.RegistryEvent;
 import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKit;
 import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
 import com.ferreusveritas.dynamictrees.api.worldgen.FeatureCanceller;
+import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
+import com.ferreusveritas.dynamictrees.block.rooty.SoilProperties;
+import com.ferreusveritas.dynamictrees.api.GatherDataHelper;
+import com.ferreusveritas.dynamictrees.tree.family.Family;
+import com.ferreusveritas.dynamictrees.tree.species.Species;
+import com.ferreusveritas.dynamictrees.resources.Resources;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
@@ -31,9 +36,9 @@ public final class DTBetterNetherRegistries {
 
     @SubscribeEvent
     public static void gatherData(final GatherDataEvent event) {
-        event.getGenerator().addProvider(
-                event.includeClient(),
-                new EnglishLanguageProvider(event.getGenerator().getPackOutput())
-        );
+        Resources.MANAGER.gatherData();
+        GatherDataHelper.gatherAllData(DynamicTreesBetterNether.MOD_ID, event,
+                SoilProperties.REGISTRY, Family.REGISTRY, Species.REGISTRY,
+                LeavesProperties.REGISTRY);
     }
 }

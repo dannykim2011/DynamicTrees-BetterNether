@@ -1,0 +1,17 @@
+{
+  "values": [
+    {
+      "id": "dtbetternether:mushroom_fir_seed",
+      "required": false
+    },
+    {
+      "id": "dtbetternether:nether_brown_mushroom_seed",
+      "required": false
+    },
+    {
+      "id": "dtbetternether:nether_red_mushroom_seed",
+      "required": false
+    },
+    "dtbetternether:wart_seed"
+  ]
+}

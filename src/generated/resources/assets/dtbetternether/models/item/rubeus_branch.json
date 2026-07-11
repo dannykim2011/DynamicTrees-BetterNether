@@ -1,0 +1,7 @@
+{
+  "parent": "dynamictrees:item/branch",
+  "textures": {
+    "bark": "betternether:block/rubeus_log_side",
+    "rings": "betternether:block/rubeus_log_top"
+  }
+}

@@ -1,28 +1,28 @@
-# Dynamic Trees–Better Nether
+## Dynamic Trees for BetterNether
 
-Bring Dynamic Trees support to the trees and giant fungi added by BetterNether.
+Bring Dynamic Trees support to the trees and fungi added by BetterNether.
 
-This addon integrates BetterNether's vegetation with Dynamic Trees, allowing
-supported species to grow, branch, and generate using Dynamic Trees' mechanics
-while preserving their distinctive shapes and behavior.
+This addon integrates BetterNether's vegetation with Dynamic Trees, allowing it
+to behave just like a native Dynamic Trees species. Instead of using
+BetterNether's standard tree system, supported species will grow, branch, and
+interact with the world using Dynamic Trees' mechanics while preserving the
+gameplay experience intended by BetterNether.
 
 ## Features
 
-🌳 **Dynamic Trees compatibility for BetterNether** – Adds dynamically growing
-versions of supported BetterNether species.
-
-🌿 **Custom growth and world generation** – Preserves each species' characteristic
-height, canopy, branching, and biome placement.
-
-🍄 **Optional giant fungi support** – Enables dynamic BetterNether fungi when
-Dynamic Trees Plus is installed.
-
-⚡ **Lightweight compatibility addon** – Integrates directly with Dynamic Trees
-without requiring Dynamic Trees Addon Lib.
+* 🌳 **Dynamic Trees compatibility for BetterNether's trees and fungi** – Makes
+supported BetterNether species grow, branch, and behave like native Dynamic
+Trees species.
+* ❤️ **Full fungi support** – Fungi generate and function naturally with
+Dynamic Trees, preserving BetterNether's intended gameplay and mechanics.
+* 🌱 **Seamless integration** – Includes Dynamic Trees features such as dynamic
+growth, falling trees, seeds, saplings, and world generation compatibility.
+* ⚡ **Lightweight compatibility addon** – Focused solely on integrating
+BetterNether with Dynamic Trees without changing other gameplay.
 
 ## Requirements
 
 * Dynamic Trees
 * BetterNether Forge
-* Dynamic Trees Plus (optional, recommended for giant fungi)
+* Dynamic Trees Plus
 
