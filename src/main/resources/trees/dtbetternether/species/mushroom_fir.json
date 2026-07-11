@@ -1,12 +1,27 @@
 {
-  "only_if_loaded":"dynamictreesplus","type":"dynamictreesplus:mushroom",
-  "family":"dtbetternether:mushroom_fir","tapering":0,"signal_energy":7,
-  "growth_rate":1.1,"soil_longevity":4,"max_branch_radius":8,
-  "cap_properties":"dtbetternether:mushroom_fir",
-  "mushroom_shape_kit":"dtbetternether:mushroom_fir",
-  "growth_logic_kit":"dtbetternether:mushroom_fir",
-  "primitive_sapling":"betternether:mushroom_fir_sapling",
-  "acceptable_soils":["nether_soil_like","fungus_like"],
-  "perfect_biomes":{"name":"betternether:nether_mushroom_forest"},
-  "features":["bottom_flare"]
+    "only_if_loaded":  "dynamictreesplus",
+    "type":  "dynamictreesplus:mushroom",
+    "family":  "dtbetternether:mushroom_fir",
+    "tapering":  0,
+    "signal_energy":  7,
+    "growth_rate":  1.1,
+    "soil_longevity":  4,
+    "max_branch_radius":  8,
+    "cap_properties":  "dtbetternether:mushroom_fir",
+    "mushroom_shape_kit":  "dtbetternether:mushroom_fir",
+    "growth_logic_kit":  "dtbetternether:mushroom_fir",
+    "primitive_sapling":  "betternether:mushroom_fir_sapling",
+    "acceptable_soils":  [
+                             "nether_soil_like",
+                             "fungus_like"
+                         ],
+    "perfect_biomes":  {
+                           "name":  "betternether:nether_mushroom_forest"
+                       },
+    "features":  [
+                     "bottom_flare"
+                 ],
+    "model_overrides":  {
+                            "sapling":  "dynamictrees:block/smartmodel/mushroom_flat"
+                        }
 }

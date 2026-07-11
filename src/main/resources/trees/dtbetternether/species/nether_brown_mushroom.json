@@ -1,12 +1,31 @@
 {
-  "only_if_loaded":"dynamictreesplus","type":"dynamictreesplus:mushroom",
-  "family":"dtbetternether:nether_brown_mushroom","tapering":0,"signal_energy":22,
-  "growth_rate":0.7,"soil_longevity":7,"max_branch_radius":24,
-  "cap_properties":"dtbetternether:nether_brown_mushroom",
-  "mushroom_shape_kit":"dtbetternether:nether_brown_mushroom",
-  "growth_logic_kit":"dtbetternether:nether_brown_mushroom",
-  "primitive_sapling":"minecraft:brown_mushroom",
-  "acceptable_soils":["fungus_like","nether_soil_like"],
-  "perfect_biomes":{"names_or":["betternether:nether_mushroom_forest","betternether:old_fungiwoods"]},
-  "features":["bottom_flare","mound"]
+    "only_if_loaded":  "dynamictreesplus",
+    "type":  "dynamictreesplus:mushroom",
+    "family":  "dtbetternether:nether_brown_mushroom",
+    "tapering":  0,
+    "signal_energy":  22,
+    "growth_rate":  0.7,
+    "soil_longevity":  7,
+    "max_branch_radius":  24,
+    "cap_properties":  "dtbetternether:nether_brown_mushroom",
+    "mushroom_shape_kit":  "dtbetternether:nether_brown_mushroom",
+    "growth_logic_kit":  "dtbetternether:nether_brown_mushroom",
+    "primitive_sapling":  "minecraft:brown_mushroom",
+    "acceptable_soils":  [
+                             "fungus_like",
+                             "nether_soil_like"
+                         ],
+    "perfect_biomes":  {
+                           "names_or":  [
+                                            "betternether:nether_mushroom_forest",
+                                            "betternether:old_fungiwoods"
+                                        ]
+                       },
+    "features":  [
+                     "bottom_flare",
+                     "mound"
+                 ],
+    "model_overrides":  {
+                            "sapling":  "dynamictrees:block/smartmodel/mushroom_flat"
+                        }
 }

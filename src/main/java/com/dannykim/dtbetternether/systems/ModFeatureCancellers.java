@@ -13,24 +13,27 @@ public final class ModFeatureCancellers {
             DynamicTreesBetterNether.location("betternether_trees"),
             Set.of(
                     ResourceLocation.fromNamespaceAndPath("betternether", "anchor_tree"),
-                    ResourceLocation.fromNamespaceAndPath("betternether", "old_willow"),
+                    ResourceLocation.fromNamespaceAndPath("betternether", "anchor_tree_branch"),
+                    ResourceLocation.fromNamespaceAndPath("betternether", "anchor_tree_root"),
+                    ResourceLocation.fromNamespaceAndPath("betternether", "old_willow_tree"),
                     ResourceLocation.fromNamespaceAndPath("betternether", "rubeus_tree"),
+                    ResourceLocation.fromNamespaceAndPath("betternether", "rubeus_bush"),
                     ResourceLocation.fromNamespaceAndPath("betternether", "sakura_tree"),
+                    ResourceLocation.fromNamespaceAndPath("betternether", "sakura_bush"),
                     ResourceLocation.fromNamespaceAndPath("betternether", "wart_tree"),
-                    ResourceLocation.fromNamespaceAndPath("betternether", "willow_tree")
+                    ResourceLocation.fromNamespaceAndPath("betternether", "wart_bush"),
+                    ResourceLocation.fromNamespaceAndPath("betternether", "willow_tree"),
+                    ResourceLocation.fromNamespaceAndPath("betternether", "willow_bush")
             )
     );
-
     public static final FeatureCanceller BETTERNETHER_FUNGI = new FeatureTypeCanceller(
             DynamicTreesBetterNether.location("betternether_fungi"),
             Set.of(
-                    ResourceLocation.fromNamespaceAndPath("betternether", "big_brown_mushroom"),
                     ResourceLocation.fromNamespaceAndPath("betternether", "mushroom_fir"),
-                    ResourceLocation.fromNamespaceAndPath("minecraft", "block_column"),
-                    ResourceLocation.fromNamespaceAndPath("wover", "template")
+                    ResourceLocation.fromNamespaceAndPath("wover", "template"),
+                    ResourceLocation.fromNamespaceAndPath("minecraft", "block_column")
             )
     );
-
     private ModFeatureCancellers() {
     }
 

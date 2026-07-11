@@ -1,1 +1,9 @@
-{"only_if_loaded":"dynamictreesplus","primitive_cap":"minecraft:red_mushroom_block","material_color":"COLOR_RED","mushroom_item":"minecraft:red_mushroom"}
+{
+  "only_if_loaded": "dynamictreesplus",
+  "primitive_cap": "minecraft:red_mushroom_block",
+  "map_color": "COLOR_RED",
+  "mushroom_item": "minecraft:red_mushroom",
+  "texture_overrides": {
+    "cap": "betternether:block/red_head"
+  }
+}

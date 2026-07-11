@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "minecraft:block/mushroom_block_inside",
+    "side": "betternether:block/red_head",
+    "top": "betternether:block/red_head"
+  }
+}

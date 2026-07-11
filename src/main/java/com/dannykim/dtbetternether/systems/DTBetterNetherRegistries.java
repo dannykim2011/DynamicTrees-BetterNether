@@ -1,11 +1,16 @@
 package com.dannykim.dtbetternether.systems;
 
 import com.dannykim.dtbetternether.DynamicTreesBetterNether;
-import com.dannykim.dtbetternether.data.EnglishLanguageProvider;
 import com.dtteam.dynamictrees.event.RegistryEvent;
 import com.dtteam.dynamictrees.api.worldgen.FeatureCanceller;
 import com.dtteam.dynamictrees.systems.genfeature.GenFeature;
 import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
+import com.dtteam.dynamictrees.block.leaves.LeavesProperties;
+import com.dtteam.dynamictrees.block.soil.SoilProperties;
+import com.dtteam.dynamictrees.data.GatherDataHelper;
+import com.dtteam.dynamictrees.tree.family.Family;
+import com.dtteam.dynamictrees.tree.species.Species;
+import com.dtteam.dynamictrees.treepack.Resources;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 public final class DTBetterNetherRegistries {
@@ -31,9 +36,9 @@ public final class DTBetterNetherRegistries {
 
     @SubscribeEvent
     public static void gatherData(final GatherDataEvent event) {
-        event.getGenerator().addProvider(
-                event.includeClient(),
-                new EnglishLanguageProvider(event.getGenerator().getPackOutput())
-        );
+        Resources.MANAGER.gatherData();
+        GatherDataHelper.gatherAllData(DynamicTreesBetterNether.MOD_ID, event,
+                SoilProperties.REGISTRY, Family.REGISTRY, Species.REGISTRY,
+                LeavesProperties.REGISTRY);
     }
 }

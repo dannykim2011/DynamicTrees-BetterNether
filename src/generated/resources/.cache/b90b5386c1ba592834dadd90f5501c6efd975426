@@ -1,0 +1,10 @@
+// 1.21.1	2026-07-06T07:56:05.7505936	dtbetternether DT Block Tags
+bd0ce84eded1851660bfd97f17d187fc0af3b264 data/dynamictrees/tags/block/branches_that_burn.json
+63a1b96943f26914fb9d8ab83f9784ea1f939afd data/dynamictrees/tags/block/fungus_branches.json
+405a3acd91e4fa50c85b5a7ad33a886ce5b13a5d data/dynamictrees/tags/block/fungus_caps.json
+c65a2ffb15ef37a3172a76747cc9bccdd925a2a5 data/dynamictrees/tags/block/leaves.json
+c47ee7d7956b6fc2743f07ed8aead34ab9dba19d data/dynamictrees/tags/block/rooty_soil.json
+f27a73dac0106e8834750bd2f00877587bd7ea7b data/dynamictrees/tags/block/saplings.json
+2cc15355ed8f324d442cb191560be7cbf8d0211f data/dynamictrees/tags/block/stripped_branches_that_burn.json
+a4fbed378bddaf5333c74ed200df2aa0cf6790d3 data/dynamictrees/tags/block/stripped_fungus_branches.json
+be39f397541b885e74bf4c5348ee12a12a84b45d data/dynamictrees/tags/block/wart_blocks.json
