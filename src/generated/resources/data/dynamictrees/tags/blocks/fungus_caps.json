@@ -1,17 +1,16 @@
-{
-  "values": [
-    {
-      "id": "dtbetternether:mushroom_fir_sapling",
-      "required": false
-    },
-    {
-      "id": "dtbetternether:nether_brown_mushroom_sapling",
-      "required": false
-    },
-    {
-      "id": "dtbetternether:nether_red_mushroom_sapling",
-      "required": false
-    },
-    "dtbetternether:wart_sapling"
-  ]
+﻿{
+    "values":  [
+                   {
+                       "id":  "dtbetternether:mushroom_fir_sapling",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dtbetternether:nether_brown_mushroom_sapling",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dtbetternether:nether_red_mushroom_sapling",
+                       "required":  false
+                   }
+               ]
 }
