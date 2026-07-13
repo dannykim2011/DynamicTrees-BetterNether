@@ -1,5 +1,8 @@
-﻿{
+{
   "item.dtbetternether.anchor_tree_seed": "닻나무 씨앗",
+  "item.dtbetternether.big_warped_seed": "거대 뒤틀린 균모",
+  "item.dtbetternether.crimson_glowing_seed": "진홍빛 발광 균모",
+  "item.dtbetternether.crimson_pine_seed": "진홍빛 솔방울",
   "item.dtbetternether.mushroom_fir_seed": "버섯전나무 씨앗",
   "item.dtbetternether.nether_brown_mushroom_seed": "네더 갈색버섯 포자",
   "item.dtbetternether.nether_red_mushroom_seed": "네더 붉은버섯 포자",
@@ -9,6 +12,9 @@
   "item.dtbetternether.wart_seed": "사마귀나무 씨앗",
   "item.dtbetternether.willow_seed": "네더 버드나무 씨앗",
   "species.dtbetternether.anchor_tree": "닻나무",
+  "species.dtbetternether.big_warped": "거대 뒤틀린 나무",
+  "species.dtbetternether.crimson_glowing": "진홍빛 발광나무",
+  "species.dtbetternether.crimson_pine": "진홍빛 소나무",
   "species.dtbetternether.mushroom_fir": "버섯전나무",
   "species.dtbetternether.nether_brown_mushroom": "네더 갈색버섯",
   "species.dtbetternether.nether_red_mushroom": "네더 붉은버섯",

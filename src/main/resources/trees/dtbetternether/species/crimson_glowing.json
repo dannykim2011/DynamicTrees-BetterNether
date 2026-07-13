@@ -1,0 +1,59 @@
+{
+  "type": "nether_fungus",
+  "family": "dtbetternether:crimson_glowing",
+  "tapering": 0,
+  "signal_energy": 16,
+  "up_probability": 6,
+  "lowest_branch_height": 5,
+  "growth_rate": 0.95,
+  "soil_longevity": 7,
+  "max_branch_radius": 10,
+  "growth_logic_kit": "dtbetternether:crimson_glowing",
+  "leaves_properties": "dtbetternether:crimson_glowing",
+  "primitive_sapling": "minecraft:crimson_fungus",
+  "acceptable_soils": [
+    "nether_soil_like",
+    "fungus_like",
+    "dirt_like"
+  ],
+  "acceptable_growth_blocks": [
+    "minecraft:crimson_nylium",
+    "dynamictrees:rooty_crimson_nylium"
+  ],
+  "perfect_biomes": {
+    "name": "betternether:crimson_glowing_woods"
+  },
+  "generate_seed": true,
+  "generate_sapling": true,
+  "sapling_shape": "fat_round_mushroom_rim",
+  "texture_overrides": {
+    "sapling": "minecraft:block/shroomlight"
+  },
+  "model_overrides": {
+    "sapling": "dynamictrees:block/smartmodel/large_mushroom_round"
+  },
+  "features": [
+    "roots",
+    {
+      "name": "mound",
+      "properties": {
+        "mound_cutoff_radius": 999
+      }
+    },
+    "clear_volume",
+    "bottom_flare",
+    {
+      "name": "vines",
+      "properties": {
+        "vine_type": "ceiling",
+        "block": "minecraft:weeping_vines_plant",
+        "tip_block": "minecraft:weeping_vines",
+        "max_length": 6,
+        "quantity": 10
+      }
+    }
+  ],
+  "lang_overrides": {
+    "seed": "Crimson Glow Cap"
+  }
+}
