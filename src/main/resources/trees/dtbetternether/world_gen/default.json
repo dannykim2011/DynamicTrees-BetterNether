@@ -108,6 +108,45 @@
     },
     {
         "select": {
+            "name": "betternether:old_warped_woods"
+        },
+        "apply": {
+            "species": "dtbetternether:big_warped",
+            "density": [
+                0.7
+            ],
+            "chance": 0.86,
+            "forestness": 1.0
+        }
+    },
+    {
+        "select": {
+            "name": "betternether:crimson_glowing_woods"
+        },
+        "apply": {
+            "species": "dtbetternether:crimson_glowing",
+            "density": [
+                0.78
+            ],
+            "chance": 0.9,
+            "forestness": 1.0
+        }
+    },
+    {
+        "select": {
+            "name": "betternether:crimson_pinewood"
+        },
+        "apply": {
+            "species": "dtbetternether:crimson_pine",
+            "density": [
+                0.72
+            ],
+            "chance": 0.88,
+            "forestness": 1.0
+        }
+    },
+    {
+        "select": {
             "name": "betternether:upside_down_forest"
         },
         "apply": {

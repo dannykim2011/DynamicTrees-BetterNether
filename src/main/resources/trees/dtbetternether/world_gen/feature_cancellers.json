@@ -10,6 +10,19 @@
                        }
     },
     {
+        "__comment":  "Replace BetterNether Wover template structure trees that now have DT species.",
+        "select":  {
+                       "names_or":  [
+                                        "betternether:old_warped_woods",
+                                        "betternether:crimson_glowing_woods",
+                                        "betternether:crimson_pinewood"
+                                    ]
+                   },
+        "cancellers":  {
+                           "type":  "dtbetternether:betternether_template_trees"
+                       }
+    },
+    {
         "__comment":  "Replace the three BetterNether large fungi with their DT+ species.",
         "select":  {
                        "names_or":  [
