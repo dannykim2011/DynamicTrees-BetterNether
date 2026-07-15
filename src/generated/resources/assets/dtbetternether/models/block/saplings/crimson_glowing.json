@@ -1,8 +1,8 @@
 {
-  "parent": "dynamictrees:block/smartmodel/large_mushroom_round",
+  "parent": "dynamictrees:block/smartmodel/sapling",
   "render_type": "minecraft:cutout_mipped",
   "textures": {
-    "cap": "minecraft:block/shroomlight",
-    "stem": "minecraft:block/crimson_stem"
+    "leaves": "minecraft:block/shroomlight",
+    "log": "minecraft:block/crimson_stem"
   }
 }

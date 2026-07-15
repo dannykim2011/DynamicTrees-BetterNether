@@ -2,7 +2,7 @@
   "parent": "dynamictrees:block/smartmodel/sapling",
   "render_type": "minecraft:cutout_mipped",
   "textures": {
-    "leaves": "betternether:block/nether_sakura_leaves_2",
+    "leaves": "betternether:block/nether_sakura_leaves",
     "log": "betternether:block/nether_sakura_log_side"
   }
 }

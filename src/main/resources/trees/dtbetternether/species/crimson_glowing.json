@@ -25,12 +25,11 @@
   },
   "generate_seed": true,
   "generate_sapling": true,
-  "sapling_shape": "fat_round_mushroom_rim",
   "texture_overrides": {
     "sapling": "minecraft:block/shroomlight"
   },
   "model_overrides": {
-    "sapling": "dynamictrees:block/smartmodel/large_mushroom_round"
+    "sapling": "dynamictrees:block/smartmodel/sapling"
   },
   "features": [
     "roots",

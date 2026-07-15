@@ -1,37 +1,59 @@
 [
-    {
-        "__comment":  "Replace BetterNether static tree features while retaining its original mushroom generation.",
-        "select":  {
-                       "name":  "betternether:.*",
-                       "tag":  "#minecraft:is_nether"
-                   },
-        "cancellers":  {
-                           "type":  "dtbetternether:betternether_trees"
-                       }
+  {
+    "__comment": "Replace BetterNether static tree features while retaining its original mushroom generation.",
+    "select": {
+      "name": "betternether:.*",
+      "tag": "#minecraft:is_nether"
     },
-    {
-        "__comment":  "Replace BetterNether Wover template structure trees that now have DT species.",
-        "select":  {
-                       "names_or":  [
-                                        "betternether:old_warped_woods",
-                                        "betternether:crimson_glowing_woods",
-                                        "betternether:crimson_pinewood"
-                                    ]
-                   },
-        "cancellers":  {
-                           "type":  "dtbetternether:betternether_template_trees"
-                       }
-    },
-    {
-        "__comment":  "Replace the three BetterNether large fungi with their DT+ species.",
-        "select":  {
-                       "names_or":  [
-                                        "betternether:nether_mushroom_forest",
-                                        "betternether:old_fungiwoods"
-                                    ]
-                   },
-        "cancellers":  {
-                           "type":  "dtbetternether:betternether_fungi"
-                       }
+    "cancellers": {
+      "type": "dtbetternether:betternether_trees"
     }
+  },
+  {
+    "__comment": "Replace BetterNether template tree in old_warped_woods.",
+    "select": {
+      "name": "betternether:old_warped_woods"
+    },
+    "cancellers": {
+      "type": "dtbetternether:betternether_template_trees"
+    }
+  },
+  {
+    "__comment": "Replace BetterNether template tree in crimson_glowing_woods.",
+    "select": {
+      "name": "betternether:crimson_glowing_woods"
+    },
+    "cancellers": {
+      "type": "dtbetternether:betternether_template_trees"
+    }
+  },
+  {
+    "__comment": "Replace BetterNether template tree in crimson_pinewood.",
+    "select": {
+      "name": "betternether:crimson_pinewood"
+    },
+    "cancellers": {
+      "type": "dtbetternether:betternether_template_trees"
+    }
+  },
+  {
+    "__comment": "Replace BetterNether large fungi in nether_mushroom_forest when DT+ is loaded.",
+    "only_if_loaded": "dynamictreesplus",
+    "select": {
+      "name": "betternether:nether_mushroom_forest"
+    },
+    "cancellers": {
+      "type": "dtbetternether:betternether_fungi"
+    }
+  },
+  {
+    "__comment": "Replace BetterNether large fungi in old_fungiwoods when DT+ is loaded.",
+    "only_if_loaded": "dynamictreesplus",
+    "select": {
+      "name": "betternether:old_fungiwoods"
+    },
+    "cancellers": {
+      "type": "dtbetternether:betternether_fungi"
+    }
+  }
 ]
