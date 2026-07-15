@@ -70,6 +70,7 @@
         }
     },
     {
+        "only_if_loaded": "dynamictreesplus",
         "select": {
             "name": "betternether:nether_mushroom_forest"
         },
@@ -89,6 +90,7 @@
         }
     },
     {
+        "only_if_loaded": "dynamictreesplus",
         "select": {
             "name": "betternether:old_fungiwoods"
         },

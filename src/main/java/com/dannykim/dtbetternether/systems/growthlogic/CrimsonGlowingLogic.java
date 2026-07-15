@@ -35,48 +35,48 @@ public final class CrimsonGlowingLogic extends GrowthLogicKit {
         final int spread = Math.abs(x) + Math.abs(z);
         final boolean horizontal = ctx.signal().dir.getAxis().isHorizontal();
 
-        if (y < 5 && spread <= 1) {
+        if (y < 4 && spread <= 1) {
             // y=0..4 in the templates is almost entirely crimson stem/hyphae,
             // with only small side irregularities.  Keep a narrow, slightly
             // offset leader.
-            map[Direction.UP.ordinal()] = 42;
+            map[Direction.UP.ordinal()] = 34;
             for (final Direction d : Direction.Plane.HORIZONTAL) {
-                map[d.ordinal()] = y >= 3 ? 2 : 1;
+                map[d.ordinal()] = y >= 2 ? 4 : 1;
             }
-        } else if (y < 7 && spread <= 2) {
+        } else if (y < 6 && spread <= 3) {
             // The glow band starts around y=5-7.  Start four-way radial ribs
             // but keep enough upward pressure to reach the 10-14 block height.
-            map[Direction.UP.ordinal()] = spread == 0 ? 26 : 10;
+            map[Direction.UP.ordinal()] = spread == 0 ? 18 : 7;
             for (final Direction d : Direction.Plane.HORIZONTAL) {
-                map[d.ordinal()] = outwardBias(d, x, z, 13);
+                map[d.ordinal()] = outwardBias(d, x, z, 17);
             }
             if (horizontal) {
-                map[ctx.signal().dir.ordinal()] += 5;
+                map[ctx.signal().dir.ordinal()] += 8;
             }
-        } else if (y < 10 && spread <= 4) {
+        } else if (y < 9 && spread <= 4) {
             // Main shroomlight mass.  The original has dense glow/moss around
             // short branch ends, so horizontal continuation is favored only
             // until spread 3-4 and upward growth is sharply reduced away from
             // the core.
-            map[Direction.UP.ordinal()] = spread <= 1 ? 9 : 1;
+            map[Direction.UP.ordinal()] = spread <= 1 ? 6 : 0;
             for (final Direction d : Direction.Plane.HORIZONTAL) {
-                map[d.ordinal()] = outwardBias(d, x, z, spread <= 2 ? 16 : 5);
+                map[d.ordinal()] = outwardBias(d, x, z, spread <= 2 ? 19 : 7);
             }
             if (horizontal) {
-                map[ctx.signal().dir.ordinal()] += spread < 4 ? 9 : 0;
+                map[ctx.signal().dir.ordinal()] += spread < 4 ? 12 : 0;
             }
-        } else if (y < 13 && spread <= 3) {
+        } else if (y < 11 && spread <= 3) {
             // Tapering top knot.  This keeps the last shroomlights above the
             // ribs but prevents a large mushroom cap.
-            map[Direction.UP.ordinal()] = spread <= 1 ? 5 : 0;
+            map[Direction.UP.ordinal()] = spread <= 1 ? 3 : 0;
             for (final Direction d : Direction.Plane.HORIZONTAL) {
-                map[d.ordinal()] = spread <= 2 ? outwardBias(d, x, z, 4) : 0;
+                map[d.ordinal()] = spread <= 2 ? outwardBias(d, x, z, 7) : 0;
             }
-        } else if (horizontal && y < 11 && spread <= 4) {
+        } else if (horizontal && y < 10 && spread <= 4) {
             // Existing ribs are allowed to end cleanly.  A near-zero map here
             // is intentional: leaves are shroomlights, so branch termination is
             // what makes the glow appear on tips rather than as a sheet.
-            map[ctx.signal().dir.ordinal()] = spread < 4 ? 4 : 0;
+            map[ctx.signal().dir.ordinal()] = spread < 4 ? 6 : 0;
             map[Direction.UP.ordinal()] = spread < 2 ? 1 : 0;
         }
 

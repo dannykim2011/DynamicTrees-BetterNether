@@ -10,6 +10,30 @@
     },
     {
       "type": "dynamictrees:thick_branch_rings",
+      "resource": "minecraft:block/warped_stem_top"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
+      "resource": "minecraft:block/stripped_warped_stem_top"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
+      "resource": "minecraft:block/crimson_stem_top"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
+      "resource": "minecraft:block/stripped_crimson_stem_top"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
+      "resource": "minecraft:block/crimson_stem_top"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
+      "resource": "minecraft:block/stripped_crimson_stem_top"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
       "resource": "betternether:block/mushroom_fir_log_top"
     },
     {
