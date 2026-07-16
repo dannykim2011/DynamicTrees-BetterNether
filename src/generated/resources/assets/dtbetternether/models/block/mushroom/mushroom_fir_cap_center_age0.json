@@ -1,22 +1,8 @@
 {
-  "parent": "minecraft:block/block",
+  "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "particle": "betternether:block/mushroom_fir_bark",
+    "bottom": "minecraft:block/mushroom_block_inside",
     "side": "betternether:block/mushroom_fir_bark",
-    "cuts": "betternether:block/mushroom_fir_cuts"
-  },
-  "elements": [
-    {
-      "from": [0, 0, 0],
-      "to": [16, 16, 16],
-      "faces": {
-        "down": { "uv": [8, 0, 14, 6], "texture": "#cuts" },
-        "up": { "uv": [8, 0, 14, 6], "texture": "#cuts" },
-        "north": { "uv": [0, 0, 16, 16], "texture": "#side" },
-        "south": { "uv": [0, 0, 16, 16], "texture": "#side" },
-        "west": { "uv": [0, 0, 16, 16], "texture": "#side" },
-        "east": { "uv": [0, 0, 16, 16], "texture": "#side" }
-      }
-    }
-  ]
+    "top": "betternether:block/mushroom_fir_bark"
+  }
 }

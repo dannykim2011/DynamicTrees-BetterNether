@@ -17,8 +17,7 @@
     "dirt_like"
   ],
   "acceptable_growth_blocks": [
-    "minecraft:crimson_nylium",
-    "dynamictrees:rooty_crimson_nylium"
+    "minecraft:crimson_nylium"
   ],
   "perfect_biomes": {
     "name": "betternether:crimson_glowing_woods"
@@ -32,7 +31,6 @@
     "sapling": "dynamictrees:block/smartmodel/sapling"
   },
   "features": [
-    "roots",
     {
       "name": "mound",
       "properties": {

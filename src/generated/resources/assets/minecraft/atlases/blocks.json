@@ -34,10 +34,6 @@
     },
     {
       "type": "dynamictrees:thick_branch_rings",
-      "resource": "betternether:block/mushroom_fir_log_top"
-    },
-    {
-      "type": "dynamictrees:thick_branch_rings",
       "resource": "minecraft:block/mushroom_block_inside"
     },
     {
@@ -71,6 +67,10 @@
     {
       "type": "dynamictrees:thick_branch_rings",
       "resource": "betternether:block/willow_log_top"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
+      "resource": "betternether:block/willow_stripped_log_top"
     }
   ]
 }

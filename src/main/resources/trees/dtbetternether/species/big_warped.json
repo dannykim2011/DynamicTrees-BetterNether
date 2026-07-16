@@ -17,8 +17,7 @@
                              "dirt_like"
                          ],
     "acceptable_growth_blocks":  [
-                                     "minecraft:warped_nylium",
-                                     "dynamictrees:rooty_warped_nylium"
+                                     "minecraft:warped_nylium"
                                  ],
     "perfect_biomes":  {
                            "name":  "betternether:old_warped_woods"
@@ -33,7 +32,6 @@
                             "sapling":  "dynamictrees:block/smartmodel/large_mushroom_round"
                         },
     "features":  [
-                     "roots",
                      {
                          "name":  "mound",
                          "properties":  {
