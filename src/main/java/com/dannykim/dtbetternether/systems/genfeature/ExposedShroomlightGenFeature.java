@@ -6,7 +6,7 @@ import com.dtteam.dynamictrees.systems.genfeature.GenFeatureConfiguration;
 import com.dtteam.dynamictrees.systems.genfeature.context.PostGenerationContext;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.util.Mth;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
@@ -28,7 +28,7 @@ public final class ExposedShroomlightGenFeature extends GenFeature {
     public static final ConfigurationProperty<Block> SHROOMLIGHT_BLOCK =
             ConfigurationProperty.block("shroomlight");
 
-    public ExposedShroomlightGenFeature(final ResourceLocation registryName) {
+    public ExposedShroomlightGenFeature(final Identifier registryName) {
         super(registryName);
     }
 

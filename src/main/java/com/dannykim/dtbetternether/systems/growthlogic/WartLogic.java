@@ -4,11 +4,11 @@ import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
 import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKitConfiguration;
 import com.dtteam.dynamictrees.systems.growthlogic.context.DirectionManipulationContext;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 /** Thick 5-9 block column ending in the original blocky cross-shaped wart head. */
 public final class WartLogic extends GrowthLogicKit {
-    public WartLogic(final ResourceLocation name) { super(name); }
+    public WartLogic(final Identifier name) { super(name); }
 
     @Override
     public int[] populateDirectionProbabilityMap(final GrowthLogicKitConfiguration cfg,

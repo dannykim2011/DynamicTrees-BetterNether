@@ -4,7 +4,7 @@ import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
 import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKitConfiguration;
 import com.dtteam.dynamictrees.systems.growthlogic.context.DirectionManipulationContext;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 /**
  * BetterNether's old warped woods use five floor template structures.  The
@@ -15,7 +15,7 @@ import net.minecraft.resources.ResourceLocation;
  * slightly uneven shelves instead of making a vanilla-like blob.
  */
 public final class BigWarpedLogic extends GrowthLogicKit {
-    public BigWarpedLogic(final ResourceLocation name) {
+    public BigWarpedLogic(final Identifier name) {
         super(name);
     }
 

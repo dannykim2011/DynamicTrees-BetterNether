@@ -4,7 +4,7 @@ import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
 import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKitConfiguration;
 import com.dtteam.dynamictrees.systems.growthlogic.context.DirectionManipulationContext;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 /**
  * Template-derived growth for BetterNether's crimson glow trees.
@@ -21,7 +21,7 @@ import net.minecraft.resources.ResourceLocation;
  * of continuing into a pine shelf or warped-fungus cap.
  */
 public final class CrimsonGlowingLogic extends GrowthLogicKit {
-    public CrimsonGlowingLogic(final ResourceLocation name) {
+    public CrimsonGlowingLogic(final Identifier name) {
         super(name);
     }
 

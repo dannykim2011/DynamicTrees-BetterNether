@@ -4,11 +4,11 @@ import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
 import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKitConfiguration;
 import com.dtteam.dynamictrees.systems.growthlogic.context.DirectionManipulationContext;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 /** Long narrow stem with a tapered, downward-looking conical crown. */
 public final class NetherSakuraLogic extends GrowthLogicKit {
-    public NetherSakuraLogic(final ResourceLocation name) { super(name); }
+    public NetherSakuraLogic(final Identifier name) { super(name); }
 
     @Override
     public int[] populateDirectionProbabilityMap(final GrowthLogicKitConfiguration cfg,

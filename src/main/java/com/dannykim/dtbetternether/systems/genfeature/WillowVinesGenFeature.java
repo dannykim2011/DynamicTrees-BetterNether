@@ -5,7 +5,7 @@ import com.dtteam.dynamictrees.systems.genfeature.VinesGenFeature;
 import com.dtteam.dynamictrees.tree.species.Species;
 import com.dtteam.dynamictrees.utility.CoordUtils;
 import net.minecraft.core.BlockPos;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -14,7 +14,7 @@ import net.minecraft.world.level.block.state.BlockState;
  * {@code age} property required by vanilla growing-plant tip blocks.
  */
 public final class WillowVinesGenFeature extends VinesGenFeature {
-    public WillowVinesGenFeature(final ResourceLocation registryName) {
+    public WillowVinesGenFeature(final Identifier registryName) {
         super(registryName);
     }
 

@@ -37,8 +37,14 @@ public final class DTBetterNetherRegistries {
     @SubscribeEvent
     public static void gatherData(final GatherDataEvent event) {
         Resources.MANAGER.gatherData();
-        GatherDataHelper.gatherAllData(DynamicTreesBetterNether.MOD_ID, event,
-                SoilProperties.REGISTRY, Family.REGISTRY, Species.REGISTRY,
-                LeavesProperties.REGISTRY);
+        if (event instanceof GatherDataEvent.Client clientEvent) {
+            GatherDataHelper.gatherClientData(DynamicTreesBetterNether.MOD_ID, clientEvent,
+                    SoilProperties.REGISTRY, Family.REGISTRY, Species.REGISTRY,
+                    LeavesProperties.REGISTRY);
+        } else if (event instanceof GatherDataEvent.Server serverEvent) {
+            GatherDataHelper.gatherServerData(DynamicTreesBetterNether.MOD_ID, serverEvent,
+                    SoilProperties.REGISTRY, Family.REGISTRY, Species.REGISTRY,
+                    LeavesProperties.REGISTRY);
+        }
     }
 }

@@ -4,11 +4,11 @@ import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
 import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKitConfiguration;
 import com.dtteam.dynamictrees.systems.growthlogic.context.DirectionManipulationContext;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 /** Short 5-7 block bole, four flat arms and hanging terminal twigs. */
 public final class WillowLogic extends GrowthLogicKit {
-    public WillowLogic(final ResourceLocation name) { super(name); }
+    public WillowLogic(final Identifier name) { super(name); }
 
     @Override
     public int[] populateDirectionProbabilityMap(final GrowthLogicKitConfiguration cfg,

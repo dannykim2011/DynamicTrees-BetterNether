@@ -4,13 +4,13 @@ import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
 import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKitConfiguration;
 import com.dtteam.dynamictrees.systems.growthlogic.context.DirectionManipulationContext;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 public final class MushroomStemLogic extends GrowthLogicKit {
     private final int up;
     private final int side;
 
-    public MushroomStemLogic(final ResourceLocation name, final int up, final int side) {
+    public MushroomStemLogic(final Identifier name, final int up, final int side) {
         super(name);
         this.up = up;
         this.side = side;

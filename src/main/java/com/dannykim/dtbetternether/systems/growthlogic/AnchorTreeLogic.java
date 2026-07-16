@@ -4,14 +4,14 @@ import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
 import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKitConfiguration;
 import com.dtteam.dynamictrees.systems.growthlogic.context.DirectionManipulationContext;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 /**
  * Massive Nether-height trunk with repeated 3-7 arm rings. Horizontal arms
  * arch outward, then send hanging anchors down from their terminal crowns.
  */
 public final class AnchorTreeLogic extends GrowthLogicKit {
-    public AnchorTreeLogic(final ResourceLocation name) { super(name); }
+    public AnchorTreeLogic(final Identifier name) { super(name); }
 
     @Override
     public int[] populateDirectionProbabilityMap(final GrowthLogicKitConfiguration cfg,

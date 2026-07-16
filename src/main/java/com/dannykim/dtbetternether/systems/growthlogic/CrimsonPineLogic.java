@@ -4,7 +4,7 @@ import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
 import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKitConfiguration;
 import com.dtteam.dynamictrees.systems.growthlogic.context.DirectionManipulationContext;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 /**
  * BetterNether crimson pine has five template variants.  The large variants
@@ -15,7 +15,7 @@ import net.minecraft.resources.ResourceLocation;
  * shelves, so the result reads as a crimson pine instead of a generic fungus.
  */
 public final class CrimsonPineLogic extends GrowthLogicKit {
-    public CrimsonPineLogic(final ResourceLocation name) {
+    public CrimsonPineLogic(final Identifier name) {
         super(name);
     }
 

@@ -4,11 +4,11 @@ import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
 import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKitConfiguration;
 import com.dtteam.dynamictrees.systems.growthlogic.context.DirectionManipulationContext;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 /** A tiny 3-7 block fungal spire with large lower and small upper side shelves. */
 public final class MushroomFirLogic extends GrowthLogicKit {
-    public MushroomFirLogic(final ResourceLocation name) { super(name); }
+    public MushroomFirLogic(final Identifier name) { super(name); }
 
     @Override
     public int[] populateDirectionProbabilityMap(final GrowthLogicKitConfiguration cfg,
