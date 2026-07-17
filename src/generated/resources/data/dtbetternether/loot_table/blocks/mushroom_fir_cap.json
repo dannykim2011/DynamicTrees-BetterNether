@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:block",
   "pools": [
     {
@@ -50,7 +50,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "betternether:mushroom_fir_sapling"
+              "name": "dtbetternether:mushroom_fir_seed"
             }
           ]
         }

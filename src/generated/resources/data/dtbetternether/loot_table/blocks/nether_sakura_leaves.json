@@ -40,7 +40,8 @@
               "name": "betternether:nether_sakura_leaves"
             },
             {
-              "type": "dynamictrees:seed_item",
+              "type": "minecraft:item",
+              "name": "dtbetternether:nether_sakura_seed",
               "conditions": [
                 {
                   "condition": "minecraft:survives_explosion"
