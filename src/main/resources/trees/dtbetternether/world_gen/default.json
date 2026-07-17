@@ -1,0 +1,154 @@
+﻿[
+    {
+        "select":  {
+                       "name":  "betternether:nether_swampland"
+                   },
+        "apply":  {
+                      "species":  {
+                                      "random":  {
+                                                     "dtbetternether:willow":  4
+                                                 }
+                                  },
+                      "density":  [
+                                      0.7
+                                  ],
+                      "chance":  0.82,
+                      "forestness":  1.0
+                  }
+    },
+    {
+        "select":  {
+                       "name":  "betternether:nether_swampland_terraces"
+                   },
+        "apply":  {
+                      "species":  {
+                                      "random":  {
+                                                     "dtbetternether:willow":  5
+                                                 }
+                                  },
+                      "density":  [
+                                      0.62
+                                  ],
+                      "chance":  0.78,
+                      "forestness":  0.9
+                  }
+    },
+    {
+        "select":  {
+                       "name":  "betternether:old_swampland"
+                   },
+        "apply":  {
+                      "species":  {
+                                      "random":  {
+                                                     "dtbetternether:willow":  2,
+                                                     "dtbetternether:old_willow":  3
+                                                 }
+                                  },
+                      "density":  [
+                                      0.85
+                                  ],
+                      "chance":  0.9,
+                      "forestness":  1.0
+                  }
+    },
+    {
+        "select":  {
+                       "name":  "betternether:wart_forest"
+                   },
+        "apply":  {
+                      "species":  "dtbetternether:wart",
+                      "density":  [
+                                      0.8
+                                  ],
+                      "chance":  0.9,
+                      "forestness":  1.0
+                  }
+    },
+    {
+        "select":  {
+                       "name":  "betternether:nether_jungle"
+                   },
+        "apply":  {
+                      "species":  {
+                                      "random":  {
+                                                     "dtbetternether:rubeus":  4
+                                                 }
+                                  },
+                      "density":  [
+                                      0.72
+                                  ],
+                      "chance":  0.86,
+                      "forestness":  1.0
+                  }
+    },
+    {
+        "select":  {
+                       "name":  "betternether:old_warped_woods"
+                   },
+        "apply":  {
+                      "species":  "dtbetternether:big_warped",
+                      "density":  [
+                                      0.7
+                                  ],
+                      "chance":  0.86,
+                      "forestness":  1.0
+                  }
+    },
+    {
+        "select":  {
+                       "name":  "betternether:crimson_glowing_woods"
+                   },
+        "apply":  {
+                      "species":  "dtbetternether:crimson_glowing",
+                      "density":  [
+                                      0.78
+                                  ],
+                      "chance":  0.9,
+                      "forestness":  1.0
+                  }
+    },
+    {
+        "select":  {
+                       "name":  "betternether:crimson_pinewood"
+                   },
+        "apply":  {
+                      "species":  "dtbetternether:crimson_pine",
+                      "density":  [
+                                      0.72
+                                  ],
+                      "chance":  0.88,
+                      "forestness":  1.0
+                  }
+    },
+    {
+        "select":  {
+                       "name":  "betternether:upside_down_forest"
+                   },
+        "apply":  {
+                      "species":  {
+                                      "random":  {
+                                                     "dtbetternether:anchor_tree":  5,
+                                                     "dtbetternether:nether_sakura":  3
+                                                 }
+                                  },
+                      "density":  [
+                                      0.58
+                                  ],
+                      "chance":  0.8,
+                      "forestness":  1.0
+                  }
+    },
+    {
+        "select":  {
+                       "name":  "betternether:upside_down_forest_cleared"
+                   },
+        "apply":  {
+                      "species":  "dtbetternether:anchor_tree",
+                      "density":  [
+                                      0.24
+                                  ],
+                      "chance":  0.45,
+                      "forestness":  0.5
+                  }
+    }
+]

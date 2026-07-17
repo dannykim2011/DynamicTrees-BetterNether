@@ -1,0 +1,39 @@
+﻿[
+    {
+        "__comment":  "Replace BetterNether static tree features while retaining its original mushroom generation.",
+        "select":  {
+                       "name":  "betternether:.*",
+                       "tag":  "#minecraft:is_nether"
+                   },
+        "cancellers":  {
+                           "type":  "dtbetternether:betternether_trees"
+                       }
+    },
+    {
+        "__comment":  "Replace BetterNether template tree in old_warped_woods.",
+        "select":  {
+                       "name":  "betternether:old_warped_woods"
+                   },
+        "cancellers":  {
+                           "type":  "dtbetternether:betternether_template_trees"
+                       }
+    },
+    {
+        "__comment":  "Replace BetterNether template tree in crimson_glowing_woods.",
+        "select":  {
+                       "name":  "betternether:crimson_glowing_woods"
+                   },
+        "cancellers":  {
+                           "type":  "dtbetternether:betternether_template_trees"
+                       }
+    },
+    {
+        "__comment":  "Replace BetterNether template tree in crimson_pinewood.",
+        "select":  {
+                       "name":  "betternether:crimson_pinewood"
+                   },
+        "cancellers":  {
+                           "type":  "dtbetternether:betternether_template_trees"
+                       }
+    }
+]

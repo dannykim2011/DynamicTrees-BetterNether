@@ -1,0 +1,5 @@
+{
+  "primitive_soil": "betternether:swampland_grass",
+  "acceptable_soils": ["nether_soil_like", "dirt_like"],
+  "substitute_soil": "netherrack"
+}

@@ -1,0 +1,12 @@
+﻿{
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:branch",
+                              "family":  "dtbetternether:crimson_pine",
+                              "textures":  {
+                                               "bark":  "minecraft:block/stripped_crimson_stem",
+                                               "rings":  "minecraft:block/stripped_crimson_stem_top"
+                                           }
+                          }
+                 }
+}

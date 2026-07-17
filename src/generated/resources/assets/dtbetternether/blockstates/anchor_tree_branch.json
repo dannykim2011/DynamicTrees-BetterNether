@@ -1,0 +1,12 @@
+﻿{
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:branch",
+                              "family":  "dtbetternether:anchor_tree",
+                              "textures":  {
+                                               "bark":  "betternether:block/anchor_tree_log_side",
+                                               "rings":  "betternether:block/anchor_tree_log_top"
+                                           }
+                          }
+                 }
+}

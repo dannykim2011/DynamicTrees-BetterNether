@@ -1,0 +1,12 @@
+﻿{
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:branch",
+                              "family":  "dtbetternether:nether_sakura",
+                              "textures":  {
+                                               "bark":  "betternether:block/nether_sakura_stripped_log_side",
+                                               "rings":  "betternether:block/nether_sakura_stripped_log_top"
+                                           }
+                          }
+                 }
+}

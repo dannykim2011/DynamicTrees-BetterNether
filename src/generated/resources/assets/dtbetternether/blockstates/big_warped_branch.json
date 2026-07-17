@@ -1,0 +1,12 @@
+﻿{
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:branch",
+                              "family":  "dtbetternether:big_warped",
+                              "textures":  {
+                                               "bark":  "minecraft:block/warped_stem",
+                                               "rings":  "minecraft:block/warped_stem_top"
+                                           }
+                          }
+                 }
+}

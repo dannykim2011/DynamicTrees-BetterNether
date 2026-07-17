@@ -1,0 +1,14 @@
+{
+  "type": "nether_fungus",
+  "common_leaves": "dtbetternether:crimson_glowing",
+  "common_species": "dtbetternether:crimson_glowing",
+  "primitive_log": "minecraft:crimson_stem",
+  "primitive_stripped_log": "minecraft:stripped_crimson_stem",
+  "max_branch_radius": 8,
+  "texture_overrides": {
+    "branch": "minecraft:block/crimson_stem",
+    "branch_top": "minecraft:block/crimson_stem_top",
+    "stripped_branch": "minecraft:block/stripped_crimson_stem",
+    "stripped_branch_top": "minecraft:block/stripped_crimson_stem_top"
+  }
+}

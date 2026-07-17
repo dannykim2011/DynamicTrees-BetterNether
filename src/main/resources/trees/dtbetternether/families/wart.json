@@ -1,0 +1,14 @@
+﻿{
+  "common_leaves": "dtbetternether:wart",
+  "common_species": "dtbetternether:wart",
+  "primitive_log": "betternether:wart_log",
+  "primitive_stripped_log": "betternether:wart_stripped_log",
+  "max_branch_radius": 16,
+  "generate_surface_root": true,
+  "texture_overrides": {
+    "branch": "betternether:block/wart_bark",
+    "branch_top": "betternether:block/wart_log_top",
+    "stripped_branch": "betternether:block/wart_stripped_log_side",
+    "stripped_branch_top": "betternether:block/wart_stripped_log_top"
+  }
+}

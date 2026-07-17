@@ -1,0 +1,66 @@
+{
+  "type": "nether_fungus",
+  "family": "dtbetternether:crimson_pine",
+  "tapering": 0,
+  "signal_energy": 30,
+  "up_probability": 9,
+  "lowest_branch_height": 6,
+  "growth_rate": 0.9,
+  "soil_longevity": 8,
+  "max_branch_radius": 22,
+  "growth_logic_kit": "dtbetternether:crimson_pine",
+  "leaves_properties": "dtbetternether:crimson_pine",
+  "primitive_sapling": "minecraft:crimson_fungus",
+  "acceptable_soils": [
+    "nether_soil_like",
+    "fungus_like",
+    "dirt_like"
+  ],
+  "acceptable_growth_blocks": [
+    "minecraft:crimson_nylium"
+  ],
+  "perfect_biomes": {
+    "name": "betternether:crimson_pinewood"
+  },
+  "generate_seed": true,
+  "generate_sapling": true,
+  "sapling_shape": "fat_round_mushroom_rim",
+  "texture_overrides": {
+    "sapling": "minecraft:block/nether_wart_block"
+  },
+  "model_overrides": {
+    "sapling": "dynamictrees:block/smartmodel/large_mushroom_round"
+  },
+  "features": [
+    {
+      "name": "mound",
+      "properties": {
+        "mound_cutoff_radius": 999
+      }
+    },
+    "clear_volume",
+    {
+      "name": "dtbetternether:exposed_shroomlight",
+      "properties": {
+        "target_leaves": "dtbetternether:crimson_pine_wart",
+        "place_chance": 1.0,
+        "max_count": 4,
+        "max_height": 30
+      }
+    },
+    "bottom_flare",
+    {
+      "name": "vines",
+      "properties": {
+        "vine_type": "ceiling",
+        "block": "minecraft:weeping_vines_plant",
+        "tip_block": "minecraft:weeping_vines",
+        "max_length": 5,
+        "quantity": 6
+      }
+    }
+  ],
+  "lang_overrides": {
+    "seed": "Crimson Pine Cone"
+  }
+}
