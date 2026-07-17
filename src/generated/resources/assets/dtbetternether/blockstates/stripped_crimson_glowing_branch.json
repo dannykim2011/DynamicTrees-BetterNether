@@ -1,7 +1,12 @@
 {
-  "variants": {
-    "": {
-      "model": "dtbetternether:block/stripped_crimson_glowing_branch"
-    }
-  }
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:branch",
+                              "family":  "dtbetternether:crimson_glowing",
+                              "textures":  {
+                                               "bark":  "minecraft:block/stripped_crimson_stem",
+                                               "rings":  "minecraft:block/stripped_crimson_stem_top"
+                                           }
+                          }
+                 }
 }

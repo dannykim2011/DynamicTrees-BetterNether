@@ -1,7 +1,12 @@
 {
-  "variants": {
-    "": {
-      "model": "dtbetternether:block/stripped_willow_branch"
-    }
-  }
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:branch",
+                              "family":  "dtbetternether:willow",
+                              "textures":  {
+                                               "bark":  "betternether:block/willow_stripped_log_side",
+                                               "rings":  "betternether:block/willow_stripped_log_top"
+                                           }
+                          }
+                 }
 }

@@ -1,7 +1,10 @@
 {
-  "variants": {
-    "": {
-      "model": "dtbetternether:block/anchor_tree_root"
-    }
-  }
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:surface_root",
+                              "textures":  {
+                                               "bark":  "betternether:block/anchor_tree_log_side"
+                                           }
+                          }
+                 }
 }

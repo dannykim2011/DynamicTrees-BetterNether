@@ -1,7 +1,12 @@
 {
-  "variants": {
-    "": {
-      "model": "dtbetternether:block/stripped_big_warped_branch"
-    }
-  }
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:branch",
+                              "family":  "dtbetternether:big_warped",
+                              "textures":  {
+                                               "bark":  "minecraft:block/stripped_warped_stem",
+                                               "rings":  "minecraft:block/stripped_warped_stem_top"
+                                           }
+                          }
+                 }
 }

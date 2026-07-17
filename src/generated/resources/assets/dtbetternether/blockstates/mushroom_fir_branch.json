@@ -1,7 +1,12 @@
 {
-  "variants": {
-    "": {
-      "model": "dtbetternether:block/mushroom_fir_branch"
-    }
-  }
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:branch",
+                              "family":  "dtbetternether:mushroom_fir",
+                              "textures":  {
+                                               "bark":  "betternether:block/mushroom_fir_bark",
+                                               "rings":  "minecraft:block/mushroom_block_inside"
+                                           }
+                          }
+                 }
 }

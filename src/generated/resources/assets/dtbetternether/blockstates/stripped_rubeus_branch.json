@@ -1,7 +1,12 @@
 {
-  "variants": {
-    "": {
-      "model": "dtbetternether:block/stripped_rubeus_branch"
-    }
-  }
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:branch",
+                              "family":  "dtbetternether:rubeus",
+                              "textures":  {
+                                               "bark":  "betternether:block/stripped_rubeus_log_side",
+                                               "rings":  "betternether:block/stripped_rubeus_log_top"
+                                           }
+                          }
+                 }
 }

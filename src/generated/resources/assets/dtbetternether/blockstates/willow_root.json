@@ -1,7 +1,10 @@
 {
-  "variants": {
-    "": {
-      "model": "dtbetternether:block/willow_root"
-    }
-  }
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:surface_root",
+                              "textures":  {
+                                               "bark":  "betternether:block/willow_bark"
+                                           }
+                          }
+                 }
 }

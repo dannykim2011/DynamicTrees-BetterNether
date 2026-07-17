@@ -1,7 +1,10 @@
 {
-  "variants": {
-    "": {
-      "model": "dtbetternether:block/rubeus_root"
-    }
-  }
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:surface_root",
+                              "textures":  {
+                                               "bark":  "betternether:block/rubeus_log_side"
+                                           }
+                          }
+                 }
 }

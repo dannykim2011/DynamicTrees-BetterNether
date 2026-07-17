@@ -1,7 +1,12 @@
 {
-  "variants": {
-    "": {
-      "model": "dtbetternether:block/stripped_wart_branch"
-    }
-  }
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:branch",
+                              "family":  "dtbetternether:wart",
+                              "textures":  {
+                                               "bark":  "betternether:block/wart_stripped_log_side",
+                                               "rings":  "betternether:block/wart_stripped_log_top"
+                                           }
+                          }
+                 }
 }

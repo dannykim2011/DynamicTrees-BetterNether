@@ -1,7 +1,12 @@
 {
-  "variants": {
-    "": {
-      "model": "dtbetternether:block/nether_sakura_branch"
-    }
-  }
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:branch",
+                              "family":  "dtbetternether:nether_sakura",
+                              "textures":  {
+                                               "bark":  "betternether:block/nether_sakura_log_side",
+                                               "rings":  "betternether:block/nether_sakura_log_top"
+                                           }
+                          }
+                 }
 }

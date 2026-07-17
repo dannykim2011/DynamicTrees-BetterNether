@@ -1,7 +1,12 @@
 {
-  "variants": {
-    "": {
-      "model": "dtbetternether:block/nether_red_mushroom_branch"
-    }
-  }
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:branch",
+                              "family":  "dtbetternether:nether_red_mushroom",
+                              "textures":  {
+                                               "bark":  "minecraft:block/mushroom_stem",
+                                               "rings":  "minecraft:block/mushroom_block_inside"
+                                           }
+                          }
+                 }
 }
