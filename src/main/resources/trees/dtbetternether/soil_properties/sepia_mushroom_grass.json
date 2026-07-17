@@ -1,5 +1,0 @@
-{
-  "primitive_soil": "betternether:sepia_mushroom_grass",
-  "acceptable_soils": ["fungus_like", "nether_soil_like"],
-  "substitute_soil": "netherrack"
-}

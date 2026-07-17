@@ -1,7 +1,0 @@
-{
-  "loader": "dynamictrees:branch",
-  "textures": {
-    "bark": "betternether:block/stripped_rubeus_log_side",
-    "rings": "betternether:block/stripped_rubeus_log_top"
-  }
-}

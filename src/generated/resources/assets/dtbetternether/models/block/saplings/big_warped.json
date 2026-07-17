@@ -1,8 +1,0 @@
-{
-  "parent": "dynamictrees:block/smartmodel/large_mushroom_round",
-  "render_type": "minecraft:cutout_mipped",
-  "textures": {
-    "cap": "minecraft:block/warped_wart_block",
-    "stem": "minecraft:block/warped_stem"
-  }
-}
