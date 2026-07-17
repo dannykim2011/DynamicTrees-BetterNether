@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dtbetternether:item/anchor_tree_seed"
+    "layer0": "dtbetternether:item/nether_cactus_seed"
   }
 }
