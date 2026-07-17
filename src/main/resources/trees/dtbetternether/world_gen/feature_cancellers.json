@@ -55,5 +55,25 @@
     "cancellers": {
       "type": "dtbetternether:betternether_fungi"
     }
+  },
+  {
+    "__comment": "Replace BetterNether nether cactus in gravel_desert when DT Plus is available.",
+    "only_if_loaded": "dynamictreesplus",
+    "select": {
+      "name": "betternether:gravel_desert"
+    },
+    "cancellers": {
+      "type": "dtbetternether:betternether_cacti"
+    }
+  },
+  {
+    "__comment": "Replace BetterNether nether cactus columns in gravel_desert when DT Plus is available.",
+    "only_if_loaded": "dynamictreesplus",
+    "select": {
+      "name": "betternether:gravel_desert"
+    },
+    "cancellers": {
+      "type": "dtbetternether:betternether_cactus_columns"
+    }
   }
 ]

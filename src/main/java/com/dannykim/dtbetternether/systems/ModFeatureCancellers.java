@@ -1,6 +1,7 @@
 package com.dannykim.dtbetternether.systems;
 
 import com.dannykim.dtbetternether.DynamicTreesBetterNether;
+import com.dannykim.dtbetternether.worldgen.FeatureBlockCanceller;
 import com.dannykim.dtbetternether.worldgen.FeatureTypeCanceller;
 import com.ferreusveritas.dynamictrees.api.registry.Registry;
 import com.ferreusveritas.dynamictrees.api.worldgen.FeatureCanceller;
@@ -43,6 +44,19 @@ public final class ModFeatureCancellers {
                     ResourceLocation.tryBuild("bclib", "template")
             )
     );
+
+    public static final FeatureCanceller BETTERNETHER_CACTI = new FeatureBlockCanceller(
+            DynamicTreesBetterNether.location("betternether_cacti"),
+            Set.of("betternether:nether_cactus")
+    );
+
+    public static final FeatureCanceller BETTERNETHER_CACTUS_COLUMNS = new FeatureTypeCanceller(
+            DynamicTreesBetterNether.location("betternether_cactus_columns"),
+            Set.of(
+                    ResourceLocation.tryBuild("minecraft", "block_column")
+            )
+    );
+
     private ModFeatureCancellers() {
     }
 
@@ -51,6 +65,8 @@ public final class ModFeatureCancellers {
         registry.register(BETTERNETHER_TEMPLATE_TREES);
         if (ModList.get().isLoaded("dynamictreesplus")) {
             registry.register(BETTERNETHER_FUNGI);
+            registry.register(BETTERNETHER_CACTI);
+            registry.register(BETTERNETHER_CACTUS_COLUMNS);
         }
     }
 }
