@@ -15,6 +15,7 @@ public final class DynamicTreesBetterNether {
     public DynamicTreesBetterNether() {
         RegistryHandler.setup(MOD_ID);
         DistExecutor.safeRunWhenOn(Dist.CLIENT, () -> com.dannykim.dtbetternether.client.ThickBranchRingsSource::register);
+        DistExecutor.safeRunWhenOn(Dist.CLIENT, () -> com.dannykim.dtbetternether.client.FilledTextureSource::register);
         if (ModList.get().isLoaded("dynamictreesplus")) {
             FMLJavaModLoadingContext.get().getModEventBus().register(
                     com.dannykim.dtbetternether.systems.mushroom.DTPlusRegistries.class

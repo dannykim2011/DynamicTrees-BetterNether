@@ -2,8 +2,8 @@
   "parent": "dynamictreesplus:block/smart_model/pipe_cactus",
   "render_type": "minecraft:solid",
   "textures": {
-    "bottom": "dtbetternether:block/cactus_middle_top_opaque",
-    "side": "dtbetternether:block/cactus_middle_side_opaque",
-    "top": "dtbetternether:block/cactus_middle_top_opaque"
+    "bottom": "betternether:block/cactus_middle_top_filled",
+    "side": "betternether:block/cactus_middle_side_filled",
+    "top": "betternether:block/cactus_middle_top_filled"
   }
 }

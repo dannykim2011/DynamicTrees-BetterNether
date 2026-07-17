@@ -2,7 +2,7 @@
   "parent": "dynamictrees:item/branch",
   "render_type": "minecraft:solid",
   "textures": {
-    "bark": "dtbetternether:block/cactus_middle_side_opaque",
-    "rings": "dtbetternether:block/cactus_middle_top_opaque"
+    "bark": "betternether:block/cactus_middle_side_filled",
+    "rings": "betternether:block/cactus_middle_top_filled"
   }
 }
