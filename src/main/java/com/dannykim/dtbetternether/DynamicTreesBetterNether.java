@@ -14,6 +14,7 @@ public final class DynamicTreesBetterNether {
 
     public DynamicTreesBetterNether(final IEventBus modEventBus, final ModContainer modContainer) {
         modEventBus.register(DTBetterNetherRegistries.class);
+        modEventBus.addListener(com.dannykim.dtbetternether.client.FilledTextureSource::register);
         if (ModList.get().isLoaded("dynamictreesplus")) {
             modEventBus.register(com.dannykim.dtbetternether.systems.mushroom.DTPlusRegistries.class);
         }

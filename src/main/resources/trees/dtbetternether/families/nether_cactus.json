@@ -7,8 +7,8 @@
   "stick": "air",
   "generate_stripped_branch": false,
   "texture_overrides": {
-    "branch": "betternether:block/cactus_middle_side",
-    "branch_top": "betternether:block/cactus_middle_top",
-    "branch_bottom": "betternether:block/cactus_middle_top"
+    "branch": "betternether:block/cactus_middle_side_filled",
+    "branch_top": "betternether:block/cactus_middle_top_filled",
+    "branch_bottom": "betternether:block/cactus_middle_top_filled"
   }
 }
