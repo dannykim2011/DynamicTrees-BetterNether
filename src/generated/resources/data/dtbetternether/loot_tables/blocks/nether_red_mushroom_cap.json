@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:block",
   "pools": [
     {
@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "minecraft:red_mushroom_block"
+              "name": "dtbetternether:nether_red_mushroom_seed_block"
             },
             {
               "type": "minecraft:item",
@@ -48,7 +48,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:red_mushroom"
+              "name": "dtbetternether:nether_red_mushroom_seed"
             }
           ]
         }

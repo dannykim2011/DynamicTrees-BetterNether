@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:block",
   "pools": [
     {
@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:nether_wart_block"
+          "name": "dtbetternether:wart_seed"
         }
       ],
       "rolls": 1.0
