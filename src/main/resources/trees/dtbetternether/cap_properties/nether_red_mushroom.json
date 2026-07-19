@@ -4,6 +4,6 @@
   "material_color": "COLOR_RED",
   "mushroom_item": "minecraft:red_mushroom",
   "texture_overrides": {
-    "cap": "betternether:block/red_head"
+    "cap": "minecraft:block/red_mushroom_block"
   }
 }
