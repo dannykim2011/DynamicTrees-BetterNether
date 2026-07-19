@@ -1,10 +1,11 @@
 ﻿{
-  "variants": {
-    "": {
-      "type": "dynamictrees:surface_root",
-      "textures": {
-        "bark": "betternether:block/nether_sakura_log_side"
-      }
-    }
-  }
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:surface_root",
+                              "family":  "dtbetternether:nether_sakura",
+                              "textures":  {
+                                               "bark":  "betternether:block/nether_sakura_log_side"
+                                           }
+                          }
+                 }
 }

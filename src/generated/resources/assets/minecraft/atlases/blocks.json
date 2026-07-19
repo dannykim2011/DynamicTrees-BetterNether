@@ -1,6 +1,14 @@
 {
   "sources": [
     {
+      "type": "dtbetternether:filled_texture",
+      "resource": "betternether:block/cactus_middle_side"
+    },
+    {
+      "type": "dtbetternether:filled_texture",
+      "resource": "betternether:block/cactus_middle_top"
+    },
+    {
       "type": "dynamictrees:thick_branch_rings",
       "resource": "betternether:block/anchor_tree_log_top"
     },
@@ -23,6 +31,22 @@
     {
       "type": "dynamictrees:thick_branch_rings",
       "resource": "minecraft:block/stripped_crimson_stem_top"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
+      "resource": "minecraft:block/crimson_stem_top"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
+      "resource": "minecraft:block/stripped_crimson_stem_top"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
+      "resource": "minecraft:block/mushroom_block_inside"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
+      "resource": "minecraft:block/mushroom_block_inside"
     },
     {
       "type": "dynamictrees:thick_branch_rings",

@@ -2,7 +2,7 @@
   "parent": "dynamictrees:block/smartmodel/sapling",
   "render_type": "minecraft:cutout_mipped",
   "textures": {
-    "leaves": "betternether:block/willow_leaves_full",
+    "leaves": "betternether:block/willow_leaves",
     "log": "betternether:block/willow_bark"
   }
 }

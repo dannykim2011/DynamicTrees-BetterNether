@@ -1,0 +1,14 @@
+{
+  "only_if_loaded": "dynamictreesplus",
+  "type": "dynamictreesplus:cactus",
+  "common_leaves": "bare",
+  "common_species": "dtbetternether:nether_cactus",
+  "primitive_log": "betternether:nether_cactus",
+  "stick": "air",
+  "generate_stripped_branch": false,
+  "texture_overrides": {
+    "branch": "betternether:block/cactus_middle_side_filled",
+    "branch_top": "betternether:block/cactus_middle_top_filled",
+    "branch_bottom": "betternether:block/cactus_middle_top_filled"
+  }
+}

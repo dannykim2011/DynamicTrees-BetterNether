@@ -1,10 +1,11 @@
 ﻿{
-  "variants": {
-    "": {
-      "type": "dynamictrees:surface_root",
-      "textures": {
-        "bark": "betternether:block/wart_bark"
-      }
-    }
-  }
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:surface_root",
+                              "family":  "dtbetternether:wart",
+                              "textures":  {
+                                               "bark":  "betternether:block/wart_bark"
+                                           }
+                          }
+                 }
 }

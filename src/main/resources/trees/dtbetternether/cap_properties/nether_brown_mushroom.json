@@ -1,0 +1,13 @@
+{
+  "only_if_loaded": "dynamictreesplus",
+  "primitive_cap": "minecraft:brown_mushroom_block",
+  "map_color": "DIRT",
+  "age_zero_shape": "slab",
+  "model_overrides": {
+    "cap_center_age_0_parent": "minecraft:block/slab"
+  },
+  "mushroom_item": "minecraft:brown_mushroom",
+  "texture_overrides": {
+    "cap": "minecraft:block/brown_mushroom_block"
+  }
+}

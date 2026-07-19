@@ -1,0 +1,12 @@
+﻿{
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:branch",
+                              "family":  "dtbetternether:nether_cactus",
+                              "textures":  {
+                                               "bark":  "betternether:block/cactus_middle_side_filled",
+                                               "rings":  "betternether:block/cactus_middle_top_filled"
+                                           }
+                          }
+                 }
+}
