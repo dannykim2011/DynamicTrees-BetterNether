@@ -1,4 +1,4 @@
-﻿{
+{
     "type":  "nether_fungus",
     "family":  "dtbetternether:big_warped",
     "tapering":  0,
@@ -32,6 +32,12 @@
                             "sapling":  "dynamictrees:block/smartmodel/large_mushroom_round"
                         },
     "features":  [
+                     {
+                         "name":  "roots",
+                         "properties":  {
+                                            "min_trunk_radius":  13
+                                        }
+                     },
                      {
                          "name":  "mound",
                          "properties":  {

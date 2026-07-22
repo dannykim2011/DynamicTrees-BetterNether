@@ -1,5 +1,5 @@
 {
-  "parent": "dynamictreesplus:block/smart_model/pipe_cactus",
+  "parent": "dynamictreesplus:block/smart_model/pillar_cactus",
   "render_type": "minecraft:solid",
   "textures": {
     "bottom": "betternether:block/cactus_middle_top_filled",

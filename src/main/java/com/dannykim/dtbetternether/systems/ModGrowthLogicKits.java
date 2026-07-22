@@ -10,7 +10,6 @@ public final class ModGrowthLogicKits {
     public static final GrowthLogicKit OLD_WILLOW = new OldWillowLogic(DynamicTreesBetterNether.location("old_willow"));
     public static final GrowthLogicKit WART = new WartLogic(DynamicTreesBetterNether.location("wart"));
     public static final GrowthLogicKit RUBEUS = new RubeusLogic(DynamicTreesBetterNether.location("rubeus"));
-    public static final GrowthLogicKit MUSHROOM_FIR = new MushroomFirLogic(DynamicTreesBetterNether.location("mushroom_fir"));
     public static final GrowthLogicKit NETHER_SAKURA = new NetherSakuraLogic(DynamicTreesBetterNether.location("nether_sakura"));
     public static final GrowthLogicKit ANCHOR_TREE = new AnchorTreeLogic(DynamicTreesBetterNether.location("anchor_tree"));
     public static final GrowthLogicKit BIG_WARPED = new BigWarpedLogic(DynamicTreesBetterNether.location("big_warped"));
@@ -23,7 +22,7 @@ public final class ModGrowthLogicKits {
     private ModGrowthLogicKits() {}
 
     public static void register(final Registry<GrowthLogicKit> registry) {
-        registry.registerAll(WILLOW, OLD_WILLOW, WART, RUBEUS, MUSHROOM_FIR, NETHER_SAKURA, ANCHOR_TREE,
+        registry.registerAll(WILLOW, OLD_WILLOW, WART, RUBEUS, NETHER_SAKURA, ANCHOR_TREE,
                 BIG_WARPED, CRIMSON_GLOWING, CRIMSON_PINE, NETHER_CACTUS,
                 NETHER_RED_MUSHROOM, NETHER_BROWN_MUSHROOM);
     }

@@ -89,7 +89,6 @@
     "apply": {
       "species": {
         "random": {
-          "dtbetternether:mushroom_fir": 5,
           "dtbetternether:nether_red_mushroom": 2,
           "dtbetternether:nether_brown_mushroom": 2
         }
