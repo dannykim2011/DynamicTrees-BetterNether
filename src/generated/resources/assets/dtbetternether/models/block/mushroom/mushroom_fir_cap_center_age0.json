@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "minecraft:block/mushroom_block_inside",
-    "side": "betternether:block/mushroom_fir_bark",
-    "top": "betternether:block/mushroom_fir_bark"
-  }
-}

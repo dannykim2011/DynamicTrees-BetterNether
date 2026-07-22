@@ -12,7 +12,6 @@ public final class EnglishLanguageProvider extends LanguageProvider {
     @Override
     protected void addTranslations() {
         add("item.dtbetternether.anchor_tree_seed", "Anchor Tree Nut");
-        add("item.dtbetternether.mushroom_fir_seed", "Mushroom Fir Spore");
         add("item.dtbetternether.nether_sakura_seed", "Nether Sakura Seed");
         add("item.dtbetternether.nether_brown_mushroom_seed", "Nether Brown Mushroom Spore");
         add("item.dtbetternether.nether_cactus_seed", "Nether Cactus Seed");

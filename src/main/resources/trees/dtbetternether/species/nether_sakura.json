@@ -1,8 +1,32 @@
 {
-  "family":"dtbetternether:nether_sakura","tapering":0.4,"signal_energy":34,"up_probability":1,
-  "lowest_branch_height":14,"growth_rate":0.7,"soil_longevity":16,"max_branch_radius":24,
-  "growth_logic_kit":"dtbetternether:nether_sakura","leaves_properties":"dtbetternether:nether_sakura",
-  "primitive_sapling":"betternether:nether_sakura_sapling","acceptable_soils":["nether_soil_like","dirt_like"],
-  "perfect_biomes":{"name":"betternether:upside_down_forest"},
-  "generate_seed":true,"generate_sapling":true,"features":["roots","mound","clear_volume"]
+    "family":  "dtbetternether:nether_sakura",
+    "tapering":  0.4,
+    "signal_energy":  34,
+    "up_probability":  1,
+    "lowest_branch_height":  14,
+    "growth_rate":  0.7,
+    "soil_longevity":  16,
+    "max_branch_radius":  24,
+    "growth_logic_kit":  "dtbetternether:nether_sakura",
+    "leaves_properties":  "dtbetternether:nether_sakura",
+    "primitive_sapling":  "betternether:nether_sakura_sapling",
+    "acceptable_soils":  [
+                             "nether_soil_like",
+                             "dirt_like"
+                         ],
+    "perfect_biomes":  {
+                           "name":  "betternether:upside_down_forest"
+                       },
+    "generate_seed":  true,
+    "generate_sapling":  true,
+    "features":  [
+                     {
+                         "name":  "roots",
+                         "properties":  {
+                                            "min_trunk_radius":  13
+                                        }
+                     },
+                     "mound",
+                     "clear_volume"
+                 ]
 }
