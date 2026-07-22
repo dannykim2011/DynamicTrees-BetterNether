@@ -11,14 +11,11 @@ public final class DTPlusRegistries {
             new NetherRedMushroomShape(DynamicTreesBetterNether.location("nether_red_mushroom"));
     private static final MushroomShapeKit BROWN =
             new NetherBrownMushroomShape(DynamicTreesBetterNether.location("nether_brown_mushroom"));
-    private static final MushroomShapeKit MUSHROOM_FIR =
-            new MushroomFirShape(DynamicTreesBetterNether.location("mushroom_fir"));
-
     private DTPlusRegistries() {}
 
     @SubscribeEvent
     public static void register(final RegistryEvent<MushroomShapeKit> event) {
         if (!event.isEntryOfType(MushroomShapeKit.class)) return;
-        event.getRegistry().registerAll(RED, BROWN, MUSHROOM_FIR);
+        event.getRegistry().registerAll(RED, BROWN);
     }
 }

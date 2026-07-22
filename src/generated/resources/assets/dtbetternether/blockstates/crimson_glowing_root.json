@@ -1,0 +1,11 @@
+{
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:surface_root",
+                              "family":  "dtbetternether:crimson_glowing",
+                              "textures":  {
+                                               "bark":  "minecraft:block/crimson_stem"
+                                           }
+                          }
+                 }
+}

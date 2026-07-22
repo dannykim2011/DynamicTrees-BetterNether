@@ -1,7 +1,0 @@
-{
-  "only_if_loaded":"dynamictreesplus",
-  "primitive_cap":"betternether:mushroom_fir_stem",
-  "map_color":"COLOR_BLUE",
-  "mushroom_item":"betternether:mushroom_fir_sapling",
-  "texture_overrides":{"cap":"betternether:block/mushroom_fir_top"}
-}

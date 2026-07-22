@@ -31,7 +31,6 @@ public final class ModFeatureCancellers {
     public static final FeatureCanceller BETTERNETHER_FUNGI = new FeatureTypeCanceller(
             DynamicTreesBetterNether.location("betternether_fungi"),
             Set.of(
-                    Identifier.fromNamespaceAndPath("betternether", "mushroom_fir"),
                     Identifier.fromNamespaceAndPath("betternether", "big_red_mushroom"),
                     Identifier.fromNamespaceAndPath("betternether", "big_brown_mushroom"),
                     Identifier.fromNamespaceAndPath("wover", "template"),

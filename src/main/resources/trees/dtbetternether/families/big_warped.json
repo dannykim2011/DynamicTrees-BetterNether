@@ -1,14 +1,15 @@
 {
-  "type": "nether_fungus",
-  "common_leaves": "dtbetternether:big_warped",
-  "common_species": "dtbetternether:big_warped",
-  "primitive_log": "minecraft:warped_stem",
-  "primitive_stripped_log": "minecraft:stripped_warped_stem",
-  "max_branch_radius": 24,
-  "texture_overrides": {
-    "branch": "minecraft:block/warped_stem",
-    "branch_top": "minecraft:block/warped_stem_top",
-    "stripped_branch": "minecraft:block/stripped_warped_stem",
-    "stripped_branch_top": "minecraft:block/stripped_warped_stem_top"
-  }
+    "type":  "nether_fungus",
+    "common_leaves":  "dtbetternether:big_warped",
+    "common_species":  "dtbetternether:big_warped",
+    "primitive_log":  "minecraft:warped_stem",
+    "primitive_stripped_log":  "minecraft:stripped_warped_stem",
+    "max_branch_radius":  24,
+    "generate_surface_root":  true,
+    "texture_overrides":  {
+                              "branch":  "minecraft:block/warped_stem",
+                              "branch_top":  "minecraft:block/warped_stem_top",
+                              "stripped_branch":  "minecraft:block/stripped_warped_stem",
+                              "stripped_branch_top":  "minecraft:block/stripped_warped_stem_top"
+                          }
 }

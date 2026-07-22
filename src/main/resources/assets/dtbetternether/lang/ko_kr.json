@@ -1,4 +1,4 @@
-{
+﻿{
     "block.dtbetternether.anchor_tree_branch":  "앵커 나무 가지",
     "block.dtbetternether.anchor_tree_leaves":  "앵커 나무 잎",
     "block.dtbetternether.anchor_tree_root":  "앵커 나무 뿌리",
@@ -12,10 +12,6 @@
     "block.dtbetternether.crimson_pine_branch":  "진홍 소나무 가지",
     "block.dtbetternether.crimson_pine_sapling":  "진홍 소나무 묘목",
     "block.dtbetternether.crimson_pine_wart":  "진홍 소나무 사마귀",
-    "block.dtbetternether.mushroom_fir_branch":  "버섯 전나무 줄기",
-    "block.dtbetternether.mushroom_fir_cap":  "버섯 전나무 갓",
-    "block.dtbetternether.mushroom_fir_cap_center":  "버섯 전나무 갓 중심부",
-    "block.dtbetternether.mushroom_fir_sapling":  "버섯 전나무 어린 균체",
     "block.dtbetternether.nether_brown_mushroom_branch":  "네더 갈색버섯 줄기",
     "block.dtbetternether.nether_brown_mushroom_cap":  "네더 갈색버섯 갓",
     "block.dtbetternether.nether_brown_mushroom_cap_center":  "네더 갈색버섯 갓 중심부",
@@ -55,7 +51,6 @@
     "item.dtbetternether.big_warped_seed":  "거대 뒤틀린 균류 포자",
     "item.dtbetternether.crimson_glowing_seed":  "진홍빛 발광나무 씨앗",
     "item.dtbetternether.crimson_pine_seed":  "진홍 소나무 솔방울",
-    "item.dtbetternether.mushroom_fir_seed":  "버섯 전나무 포자",
     "item.dtbetternether.nether_brown_mushroom_seed":  "네더 갈색버섯 포자",
     "item.dtbetternether.nether_cactus_seed":  "네더 선인장 씨앗",
     "item.dtbetternether.nether_red_mushroom_seed":  "네더 빨간버섯 포자",
@@ -68,7 +63,6 @@
     "species.dtbetternether.big_warped":  "거대 뒤틀린 균류",
     "species.dtbetternether.crimson_glowing":  "진홍빛 발광나무",
     "species.dtbetternether.crimson_pine":  "진홍 소나무",
-    "species.dtbetternether.mushroom_fir":  "버섯 전나무",
     "species.dtbetternether.nether_brown_mushroom":  "네더 갈색버섯",
     "species.dtbetternether.nether_cactus":  "네더 선인장",
     "species.dtbetternether.nether_red_mushroom":  "네더 빨간버섯",
@@ -81,7 +75,6 @@
     "item.dtbetternether.big_warped_branch":  "거대 뒤틀린 균류 줄기",
     "item.dtbetternether.crimson_glowing_branch":  "진홍빛 발광나무 가지",
     "item.dtbetternether.crimson_pine_branch":  "진홍 소나무 가지",
-    "item.dtbetternether.mushroom_fir_branch":  "버섯 전나무 줄기",
     "item.dtbetternether.nether_brown_mushroom_branch":  "네더 갈색버섯 줄기",
     "item.dtbetternether.nether_cactus_branch":  "네더 선인장 줄기",
     "item.dtbetternether.nether_red_mushroom_branch":  "네더 빨간버섯 줄기",
@@ -110,7 +103,6 @@
     "item.dtbetternether.big_warped_sapling":  "거대 뒤틀린 균류 어린 균체",
     "item.dtbetternether.crimson_glowing_sapling":  "진홍빛 발광나무 묘목",
     "item.dtbetternether.crimson_pine_sapling":  "진홍 소나무 묘목",
-    "item.dtbetternether.mushroom_fir_sapling":  "버섯 전나무 어린 균체",
     "item.dtbetternether.nether_brown_mushroom_sapling":  "네더 갈색버섯 어린 균체",
     "item.dtbetternether.nether_cactus_sapling":  "네더 선인장 어린 개체",
     "item.dtbetternether.nether_red_mushroom_sapling":  "네더 빨간버섯 어린 균체",
@@ -128,7 +120,6 @@
     "family.dtbetternether.nether_cactus":  "네더 선인장",
     "family.dtbetternether.nether_brown_mushroom":  "네더 갈색 버섯",
     "family.dtbetternether.nether_red_mushroom":  "네더 빨간 버섯",
-    "family.dtbetternether.mushroom_fir":  "버섯 전나무",
     "family.dtbetternether.anchor_tree":  "닻 나무",
     "family.dtbetternether.big_warped":  "거대 뒤틀린 균"
 }

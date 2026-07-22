@@ -1,0 +1,11 @@
+{
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:surface_root",
+                              "family":  "dtbetternether:big_warped",
+                              "textures":  {
+                                               "bark":  "minecraft:block/warped_stem"
+                                           }
+                          }
+                 }
+}
