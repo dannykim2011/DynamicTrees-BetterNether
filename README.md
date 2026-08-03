@@ -20,9 +20,12 @@ growth, falling trees, seeds, saplings, and world generation compatibility.
 * ⚡ **Lightweight compatibility addon** – Focused solely on integrating
 BetterNether with Dynamic Trees without changing other gameplay.
 
-## Requirements
+## Required
 
 * Dynamic Trees
-* BetterNether Neoforge
+* BetterNether NeoForge
+
+## Optional
+
 * Dynamic Trees Plus
 
