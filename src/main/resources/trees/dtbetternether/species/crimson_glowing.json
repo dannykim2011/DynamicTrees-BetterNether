@@ -46,6 +46,17 @@
                      "clear_volume",
                      "bottom_flare",
                      {
+                         "name":  "dtbetternether:crimson_glowing_wall_decorations",
+                         "properties":  {
+                                            "target_leaves":  "dtbetternether:crimson_glowing_wart",
+                                            "target_branch":  "dtbetternether:crimson_glowing_branch",
+                                            "wall_moss":  "betternether:wall_moss",
+                                            "wall_mushroom":  "betternether:wall_mushroom_red",
+                                            "max_count":  28,
+                                            "max_height":  18
+                                        }
+                     },
+                     {
                          "name":  "vines",
                          "properties":  {
                                             "vine_type":  "ceiling",

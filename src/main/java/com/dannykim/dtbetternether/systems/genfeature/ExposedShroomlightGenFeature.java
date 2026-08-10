@@ -17,10 +17,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Replaces a few exterior wart-cap leaf blocks with shroomlights after JoCode
- * generation.  The normal Dynamic Trees shroomlight feature searches branch
- * pits, which can hide lights inside BetterNether's wide generated caps; this
- * keeps the light blocks visible without altering JoCodes or growth logic.
+ * Replaces a few exterior wart-cap leaf blocks with shroomlights after tree
+ * generation. The normal Dynamic Trees shroomlight feature searches branch
+ * pits, which can hide lights inside BetterNether's wide generated caps.
  */
 public final class ExposedShroomlightGenFeature extends GenFeature {
     public static final ConfigurationProperty<Block> TARGET_LEAVES =
