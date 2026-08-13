@@ -2,6 +2,9 @@ package com.dannykim.dtbetternether.systems;
 
 import com.dannykim.dtbetternether.DynamicTreesBetterNether;
 import com.ferreusveritas.dynamictrees.api.registry.RegistryEvent;
+import com.ferreusveritas.dynamictrees.api.registry.TypeRegistryEvent;
+import com.dannykim.dtbetternether.systems.decoration.DecoratedNetherFamily;
+import com.dannykim.dtbetternether.systems.decoration.DecoratedNetherSpecies;
 import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKit;
 import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
 import com.ferreusveritas.dynamictrees.api.worldgen.FeatureCanceller;
@@ -32,6 +35,16 @@ public final class DTBetterNetherRegistries {
     @SubscribeEvent
     public static void registerFeatureCancellers(final RegistryEvent<FeatureCanceller> event) {
         ModFeatureCancellers.register(event.getRegistry());
+    }
+
+    @SubscribeEvent
+    public static void registerFamilyTypes(final TypeRegistryEvent<Family> event) {
+        event.registerType(DynamicTreesBetterNether.location("decorated_nether_fungus"), DecoratedNetherFamily.TYPE);
+    }
+
+    @SubscribeEvent
+    public static void registerSpeciesTypes(final TypeRegistryEvent<Species> event) {
+        event.registerType(DynamicTreesBetterNether.location("decorated_nether_fungus"), DecoratedNetherSpecies.TYPE);
     }
 
     @SubscribeEvent

@@ -1,4 +1,5 @@
 {
+  "type": "dtbetternether:stable_cap",
   "only_if_loaded": "dynamictreesplus",
   "primitive_cap": "minecraft:brown_mushroom_block",
   "material_color": "DIRT",
