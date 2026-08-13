@@ -1,5 +1,5 @@
 {
-    "type":  "nether_fungus",
+    "type":  "dtbetternether:decorated_nether_fungus",
     "common_leaves":  "dtbetternether:crimson_pine",
     "common_species":  "dtbetternether:crimson_pine",
     "primitive_log":  "minecraft:crimson_stem",
