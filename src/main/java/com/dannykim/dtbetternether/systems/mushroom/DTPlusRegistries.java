@@ -4,6 +4,7 @@ import com.dannykim.dtbetternether.DynamicTreesBetterNether;
 import com.ferreusveritas.dynamictrees.api.registry.RegistryEvent;
 import com.ferreusveritas.dynamictrees.api.registry.TypeRegistryEvent;
 import com.ferreusveritas.dynamictrees.tree.family.Family;
+import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
 import com.ferreusveritas.dynamictreesplus.systems.mushroomlogic.shapekits.MushroomShapeKit;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -25,6 +26,11 @@ public final class DTPlusRegistries {
     @SubscribeEvent
     public static void registerFamilyTypes(final TypeRegistryEvent<Family> event) {
         event.registerType(DynamicTreesBetterNether.location("protected_mushroom"), ProtectedMushroomFamily.TYPE);
+    }
+
+    @SubscribeEvent
+    public static void registerSpeciesTypes(final TypeRegistryEvent<Species> event) {
+        event.registerType(DynamicTreesBetterNether.location("protected_mushroom"), ProtectedMushroomSpecies.TYPE);
     }
 
     @SubscribeEvent

@@ -1,5 +1,6 @@
 package com.dannykim.dtbetternether;
 
+import com.dannykim.dtbetternether.loot.LootModifiers;
 import com.ferreusveritas.dynamictrees.api.registry.RegistryHandler;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
@@ -14,6 +15,7 @@ public final class DynamicTreesBetterNether {
 
     public DynamicTreesBetterNether() {
         RegistryHandler.setup(MOD_ID);
+        LootModifiers.register(FMLJavaModLoadingContext.get().getModEventBus());
         DistExecutor.safeRunWhenOn(Dist.CLIENT, () -> com.dannykim.dtbetternether.client.ThickBranchRingsSource::register);
         DistExecutor.safeRunWhenOn(Dist.CLIENT, () -> com.dannykim.dtbetternether.client.FilledTextureSource::register);
         if (ModList.get().isLoaded("dynamictreesplus")) {

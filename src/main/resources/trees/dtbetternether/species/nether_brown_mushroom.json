@@ -1,7 +1,9 @@
 {
     "only_if_loaded":  "dynamictreesplus",
-    "type":  "dynamictreesplus:mushroom",
+    "type":  "dtbetternether:protected_mushroom",
     "family":  "dtbetternether:nether_brown_mushroom",
+    "generate_seed":  true,
+    "generate_sapling":  true,
     "tapering":  0,
     "signal_energy":  22,
     "growth_rate":  0.7,
