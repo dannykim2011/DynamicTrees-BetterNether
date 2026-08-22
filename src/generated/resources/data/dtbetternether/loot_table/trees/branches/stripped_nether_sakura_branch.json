@@ -14,7 +14,7 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "betternether:rubeus_stripped_log"
+          "name": "betternether:nether_sakura_stripped_log"
         }
       ],
       "rolls": 1.0
@@ -38,5 +38,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dtbetternether:trees/branches/stripped_rubeus"
+  "random_sequence": "dtbetternether:trees/branches/stripped_nether_sakura_branch"
 }

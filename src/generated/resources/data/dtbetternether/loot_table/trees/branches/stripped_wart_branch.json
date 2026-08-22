@@ -14,7 +14,7 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "minecraft:stripped_crimson_stem"
+          "name": "betternether:wart_stripped_log"
         }
       ],
       "rolls": 1.0
@@ -38,5 +38,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dtbetternether:trees/branches/stripped_crimson_glowing"
+  "random_sequence": "dtbetternether:trees/branches/stripped_wart_branch"
 }

@@ -14,7 +14,7 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "minecraft:crimson_stem"
+          "name": "betternether:rubeus_stripped_log"
         }
       ],
       "rolls": 1.0
@@ -38,5 +38,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dtbetternether:trees/branches/crimson_pine"
+  "random_sequence": "dtbetternether:trees/branches/stripped_rubeus_branch"
 }

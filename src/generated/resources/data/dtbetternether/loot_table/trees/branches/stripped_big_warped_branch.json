@@ -14,7 +14,7 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "minecraft:stripped_crimson_stem"
+          "name": "minecraft:stripped_warped_stem"
         }
       ],
       "rolls": 1.0
@@ -38,5 +38,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dtbetternether:trees/branches/stripped_crimson_pine"
+  "random_sequence": "dtbetternether:trees/branches/stripped_big_warped_branch"
 }

@@ -121,5 +121,11 @@
     "family.dtbetternether.nether_brown_mushroom":  "네더 갈색 버섯",
     "family.dtbetternether.nether_red_mushroom":  "네더 빨간 버섯",
     "family.dtbetternether.anchor_tree":  "닻 나무",
-    "family.dtbetternether.big_warped":  "거대 뒤틀린 균"
+    "family.dtbetternether.big_warped":  "거대 뒤틀린 균",
+    "block.dtbetternether.crimson_pine_root":  "진홍 소나무 뿌리",
+    "item.dtbetternether.crimson_pine_root":  "진홍 소나무 뿌리",
+    "block.dtbetternether.crimson_glowing_root":  "진홍빛 발광나무 뿌리",
+    "item.dtbetternether.crimson_glowing_root":  "진홍빛 발광나무 뿌리",
+    "block.dtbetternether.big_warped_root":  "거대 뒤틀린 균류 뿌리",
+    "item.dtbetternether.big_warped_root":  "거대 뒤틀린 균류 뿌리"
 }

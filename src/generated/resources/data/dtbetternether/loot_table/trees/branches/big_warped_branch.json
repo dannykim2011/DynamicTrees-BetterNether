@@ -14,7 +14,7 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "betternether:wart_log"
+          "name": "minecraft:warped_stem"
         }
       ],
       "rolls": 1.0
@@ -38,5 +38,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dtbetternether:trees/branches/wart"
+  "random_sequence": "dtbetternether:trees/branches/big_warped_branch"
 }
