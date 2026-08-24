@@ -10,35 +10,35 @@ logoFile="${mod_id}.png"
 authors="${mod_authors}"
 description='''${mod_description}'''
 
-[[dependencies.dtbetternether]]
+[[dependencies.${mod_id}]]
 modId="neoforge"
 type="required"
 versionRange="[21.1,)"
 ordering="NONE"
 side="BOTH"
 
-[[dependencies.dtbetternether]]
+[[dependencies.${mod_id}]]
 modId="minecraft"
 type="required"
 versionRange="${minecraft_version_range}"
 ordering="NONE"
 side="BOTH"
 
-[[dependencies.dtbetternether]]
+[[dependencies.${mod_id}]]
 modId="dynamictrees"
 type="required"
 versionRange="[${dynamic_trees_version},)"
 ordering="AFTER"
 side="BOTH"
 
-[[dependencies.dtbetternether]]
+[[dependencies.${mod_id}]]
 modId="betternether"
 type="required"
 versionRange="[${betternether_version},)"
 ordering="AFTER"
 side="BOTH"
 
-[[dependencies.dtbetternether]]
+[[dependencies.${mod_id}]]
 modId="dynamictreesplus"
 type="optional"
 versionRange="[${dynamic_trees_plus_version},)"

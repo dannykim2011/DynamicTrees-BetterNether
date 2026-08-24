@@ -1,6 +1,7 @@
 package com.dannykim.dtbetternether.systems;
 
 import com.dannykim.dtbetternether.DynamicTreesBetterNether;
+import com.dannykim.dtbetternether.systems.genfeature.BaseTrunkClearanceGenFeature;
 import com.dannykim.dtbetternether.systems.genfeature.CrimsonGlowingWallDecorationsGenFeature;
 import com.dannykim.dtbetternether.systems.genfeature.ExposedShroomlightGenFeature;
 import com.dannykim.dtbetternether.systems.genfeature.WillowVinesGenFeature;
@@ -8,6 +9,8 @@ import com.dtteam.dynamictrees.api.registry.Registry;
 import com.dtteam.dynamictrees.systems.genfeature.GenFeature;
 
 public final class ModGenFeatures {
+    public static final GenFeature BASE_TRUNK_CLEARANCE =
+            new BaseTrunkClearanceGenFeature(DynamicTreesBetterNether.location("base_trunk_clearance"));
     public static final GenFeature WILLOW_VINES =
             new WillowVinesGenFeature(DynamicTreesBetterNether.location("willow_vines"));
     public static final GenFeature EXPOSED_SHROOMLIGHT =
@@ -19,6 +22,7 @@ public final class ModGenFeatures {
     }
 
     public static void register(final Registry<GenFeature> registry) {
+        registry.register(BASE_TRUNK_CLEARANCE);
         registry.register(WILLOW_VINES);
         registry.register(EXPOSED_SHROOMLIGHT);
         registry.register(CRIMSON_GLOWING_WALL_DECORATIONS);
