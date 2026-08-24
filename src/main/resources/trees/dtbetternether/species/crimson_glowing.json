@@ -31,6 +31,7 @@
                             "sapling":  "dynamictrees:block/smartmodel/sapling"
                         },
     "features":  [
+        "dtbetternether:base_trunk_clearance",
                      {
                          "name":  "roots",
                          "properties":  {

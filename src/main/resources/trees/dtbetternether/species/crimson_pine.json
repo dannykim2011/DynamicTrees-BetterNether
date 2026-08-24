@@ -32,6 +32,7 @@
                             "sapling":  "dynamictrees:block/smartmodel/large_mushroom_round"
                         },
     "features":  [
+        "dtbetternether:base_trunk_clearance",
                      {
                          "name":  "roots",
                          "properties":  {

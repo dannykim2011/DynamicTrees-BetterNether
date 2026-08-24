@@ -24,6 +24,7 @@
                                         ]
                        },
     "features":  [
+        "dtbetternether:base_trunk_clearance",
                      "bottom_flare",
                      "mound"
                  ],
