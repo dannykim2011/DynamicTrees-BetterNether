@@ -1,4 +1,5 @@
 {
+  "lang_overrides": { "branch": "Big Warped Fungus" },
     "type":  "dtbetternether:decorated_nether_fungus",
     "common_leaves":  "dtbetternether:big_warped",
     "common_species":  "dtbetternether:big_warped",

@@ -36,8 +36,7 @@
               "name": "betternether:willow_leaves"
             },
             {
-              "type": "minecraft:item",
-              "name": "dtbetternether:willow_seed",
+              "type": "dynamictrees:seed_item",
               "conditions": [
                 {
                   "condition": "minecraft:survives_explosion"
