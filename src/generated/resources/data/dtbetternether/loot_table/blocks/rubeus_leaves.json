@@ -40,8 +40,7 @@
               "name": "betternether:rubeus_leaves"
             },
             {
-              "type": "minecraft:item",
-              "name": "dtbetternether:rubeus_seed",
+              "type": "dynamictrees:seed_item",
               "conditions": [
                 {
                   "condition": "minecraft:survives_explosion"

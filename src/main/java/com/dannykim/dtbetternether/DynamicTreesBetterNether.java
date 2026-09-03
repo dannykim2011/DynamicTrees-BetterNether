@@ -1,6 +1,5 @@
 package com.dannykim.dtbetternether;
 
-import com.dannykim.dtbetternether.loot.LootModifiers;
 import com.dannykim.dtbetternether.systems.DTBetterNetherRegistries;
 import com.dtteam.dynamictrees.registry.NeoForgeRegistryHandler;
 import net.minecraft.resources.ResourceLocation;
@@ -16,7 +15,6 @@ public final class DynamicTreesBetterNether {
     public static final String MOD_ID = "dtbetternether";
 
     public DynamicTreesBetterNether(final IEventBus modEventBus, final ModContainer modContainer) {
-        LootModifiers.register(modEventBus);
         modEventBus.register(DTBetterNetherRegistries.class);
         if (FMLEnvironment.dist == Dist.CLIENT) {
             modEventBus.addListener(com.dannykim.dtbetternether.client.FilledTextureSource::register);

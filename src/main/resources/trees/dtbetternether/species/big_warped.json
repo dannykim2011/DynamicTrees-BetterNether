@@ -68,6 +68,7 @@
                      }
                  ],
     "lang_overrides":  {
-                           "seed":  "Big Warped Cap"
+                           "seed":  "Big Warped Cap",
+                           "species":  "Big Warped Fungus"
                        }
 }
