@@ -69,6 +69,7 @@
                      }
                  ],
     "lang_overrides":  {
-                           "seed":  "Crimson Glow Cap"
+                           "seed":  "Crimson Glow Cap",
+                           "species":  "Crimson Glowing Tree"
                        }
 }
