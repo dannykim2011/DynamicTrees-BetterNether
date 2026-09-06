@@ -10,13 +10,20 @@
   "growth_rate": 1,
   "soil_longevity": 1,
   "growth_logic_kit": "dtbetternether:nether_cactus",
-  "acceptable_soils": ["nether_like", "nether_soil_like", "gravel_like", "sand_like", "dirt_like"],
-  "world_gen_acceptable_soils": ["nether_like", "nether_soil_like", "gravel_like", "sand_like", "dirt_like"],
+  "acceptable_soils": [
+    "gravel_like"
+  ],
+  "world_gen_acceptable_soils": [
+    "gravel_like"
+  ],
   "preferred_climate": "arid",
   "climate_tolerance": 0.4,
   "cactus_thickness_logic": "dynamictreesplus:pillar",
   "mega_species": "dynamictreesplus:mega_cactus",
   "perfect_biomes": {
     "name": "betternether:gravel_desert"
+  },
+  "lang_overrides": {
+    "seed": "Nether Cactus Seed"
   }
 }

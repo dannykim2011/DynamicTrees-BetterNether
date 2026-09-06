@@ -1,0 +1,7 @@
+{
+  "primitive_soil": "minecraft:nether_wart_block",
+  "substitute_soil": "netherrack",
+  "acceptable_soils": [
+    "dtbn_crimson"
+  ]
+}
