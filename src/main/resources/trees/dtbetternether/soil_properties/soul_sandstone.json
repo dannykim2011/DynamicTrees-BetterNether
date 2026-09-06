@@ -1,0 +1,7 @@
+{
+  "primitive_soil": "betternether:soul_sandstone",
+  "substitute_soil": "netherrack",
+  "acceptable_soils": [
+    "dtbn_wart"
+  ]
+}

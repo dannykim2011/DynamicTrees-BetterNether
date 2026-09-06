@@ -1,1 +1,9 @@
-{"primitive_soil":"betternether:mushroom_grass","acceptable_soils":["fungus_like","nether_soil_like"],"substitute_soil":"netherrack"}
+{
+  "primitive_soil": "betternether:mushroom_grass",
+  "acceptable_soils": [
+    "fungus_like",
+    "nether_soil_like",
+    "dtbn_upside_down"
+  ],
+  "substitute_soil": "netherrack"
+}

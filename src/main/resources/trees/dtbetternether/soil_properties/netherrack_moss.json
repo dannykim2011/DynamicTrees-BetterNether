@@ -1,1 +1,10 @@
-{"primitive_soil":"betternether:netherrack_moss","acceptable_soils":["nether_soil_like","dirt_like"],"substitute_soil":"netherrack"}
+{
+  "primitive_soil": "betternether:netherrack_moss",
+  "acceptable_soils": [
+    "nether_soil_like",
+    "dirt_like",
+    "dtbn_upside_down",
+    "dtbn_wart"
+  ],
+  "substitute_soil": "netherrack"
+}

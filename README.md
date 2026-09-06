@@ -17,8 +17,8 @@ Trees species.
 Dynamic Trees, preserving BetterNether's intended gameplay and mechanics.
 * 🌱 **Seamless integration** – Includes Dynamic Trees features such as dynamic
 growth, falling trees, seeds, saplings, and world generation compatibility.
-* ⚡ **Lightweight compatibility addon** – Focused solely on integrating
-BetterNether with Dynamic Trees without changing other gameplay.
+* 🍄 **Optional Dynamic Trees Plus integration** – Converts supported mushrooms
+and cacti into Dynamic Trees species when Dynamic Trees Plus is installed.
 
 ## Required
 
