@@ -23,9 +23,8 @@ and cacti into Dynamic Trees species when Dynamic Trees Plus is installed.
 ## Required
 
 * Dynamic Trees
-* BetterNether NeoForge
+* BetterNether by Raijin2312
 
 ## Optional
 
 * Dynamic Trees Plus
-
