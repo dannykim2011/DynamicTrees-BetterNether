@@ -1,6 +1,8 @@
 ## Dynamic Trees for BetterNether
 
+
 Bring Dynamic Trees support to the trees and fungi added by BetterNether.
+
 
 This addon integrates BetterNether's vegetation with Dynamic Trees, allowing it
 to behave just like a native Dynamic Trees species. Instead of using
