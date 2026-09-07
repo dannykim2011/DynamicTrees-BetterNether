@@ -1,8 +1,11 @@
 ## Dynamic Trees for BetterNether
 
+
 If you want to use the dt-plus dependency in 26.1.2, please use the files found this [link](https://github.com/dannykim2011/DynamicTreesPlus/releases/tag/26.1.2-1.0.0).
 
+
 Bring Dynamic Trees support to the trees and fungi added by BetterNether.
+
 
 This addon integrates BetterNether's vegetation with Dynamic Trees, allowing it
 to behave just like a native Dynamic Trees species. Instead of using
@@ -30,3 +33,4 @@ and cacti into Dynamic Trees species when Dynamic Trees Plus is installed.
 ## Optional
 
 * Dynamic Trees Plus
+
