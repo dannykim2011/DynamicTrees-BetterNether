@@ -13,13 +13,12 @@ gameplay experience intended by BetterNether.
 ## Features
 
 * 🌳 **Dynamic Trees compatibility for BetterNether's trees and fungi** – Makes
-supported BetterNether species grow, branch, and behave like native Dynamic
-Trees species.
+supported BetterNether species grow, branch, and behave like native Dynamic Trees species.
 * ❤️ **Full fungi support** – Fungi generate and function naturally with
 Dynamic Trees, preserving BetterNether's intended gameplay and mechanics.
 * 🌱 **Seamless integration** – Includes Dynamic Trees features such as dynamic
 growth, falling trees, seeds, saplings, and world generation compatibility.
-* 🍄 **Optional Dynamic Trees Plus integration** – Converts supported mushrooms
+* 🍄 **Dynamic Trees Plus integration** – Converts supported mushrooms
 and cacti into Dynamic Trees species when Dynamic Trees Plus is installed.
 
 ## Required
@@ -30,4 +29,3 @@ and cacti into Dynamic Trees species when Dynamic Trees Plus is installed.
 ## Optional
 
 * Dynamic Trees Plus
-
