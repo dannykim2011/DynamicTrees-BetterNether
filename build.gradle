@@ -12,6 +12,16 @@ version = mod_version
 group = mod_group_id
 
 repositories {
+    exclusiveContent {
+        forRepository {
+            ivy {
+                url = 'https://github.com/dannykim2011/DynamicTreesPlus/releases/download'
+                patternLayout { artifact "${minecraft_version}-[revision]/[module]-${minecraft_version}-[revision].[ext]" }
+                metadataSources { artifact() }
+            }
+        }
+        filter { includeModule 'com.dannykim', 'dynamictreesplus' }
+    }
     maven {
         url = 'https://maven.neoforged.net/releases/'
     }
@@ -101,9 +111,8 @@ neoForge {
 }
 
 dependencies {
-    def dynamicTreesPlusJar = file('../DynamicTreesPlus 26.1.2/build/libs/dynamictreesplus-26.1.2-1.0.0.jar')
     implementation "com.dtteam.dynamictrees:dynamictrees-neoforge-${minecraft_version}:${dynamic_trees_version}"
-    compileOnly files(dynamicTreesPlusJar)
+    compileOnly "com.dannykim:dynamictreesplus:${dynamic_trees_plus_version}"
     implementation "curse.maven:betternether-neoforge-1422293:${betternether_file_id}"
     implementation "curse.maven:bclib-neoforge-1422283:${bclib_file_id}"
     implementation "curse.maven:worldweaver-neoforge-1422284:${worldweaver_file_id}"
