@@ -11,6 +11,10 @@ import net.minecraftforge.fml.ModList;
 import java.util.Set;
 
 public final class ModFeatureCancellers {
+    public static final FeatureCanceller GLOOMWOOD = new FeatureTypeCanceller(
+            DynamicTreesBetterNether.location("gloomwood"),
+            Set.of(ResourceLocation.tryBuild("betternether", "gloomwood_tree"))
+    );
     public static final FeatureCanceller BETTERNETHER_TREES = new FeatureTypeCanceller(
             DynamicTreesBetterNether.location("betternether_trees"),
             Set.of(
@@ -61,6 +65,7 @@ public final class ModFeatureCancellers {
 
     public static void register(final Registry<FeatureCanceller> registry) {
         registry.register(BETTERNETHER_TREES);
+        registry.register(GLOOMWOOD);
         registry.register(BETTERNETHER_TEMPLATE_TREES);
         if (ModList.get().isLoaded("dynamictreesplus")) {
             registry.register(BETTERNETHER_FUNGI);

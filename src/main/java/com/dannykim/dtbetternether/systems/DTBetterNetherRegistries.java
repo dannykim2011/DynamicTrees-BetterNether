@@ -45,6 +45,7 @@ public final class DTBetterNetherRegistries {
     @SubscribeEvent
     public static void registerSpeciesTypes(final TypeRegistryEvent<Species> event) {
         event.registerType(DynamicTreesBetterNether.location("decorated_nether_fungus"), DecoratedNetherSpecies.TYPE);
+        event.registerType(DynamicTreesBetterNether.location("gloomwood"), GloomwoodSpecies.TYPE);
     }
 
     @SubscribeEvent

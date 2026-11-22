@@ -2,6 +2,7 @@
   "type": "dynamictrees:wart",
   "primitive_leaves": "minecraft:shroomlight",
   "cell_kit": "dynamictrees:nether_fungus",
+  "sound": "wood",
   "smother": 4,
   "light_requirement": 0,
   "fire_spread": 0,

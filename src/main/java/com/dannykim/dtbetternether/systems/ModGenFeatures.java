@@ -9,7 +9,7 @@ import com.ferreusveritas.dynamictrees.api.registry.Registry;
 import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
 
 public final class ModGenFeatures {
-    public static final GenFeature BASE_TRUNK_CLEARANCE =
+    public static final BaseTrunkClearanceGenFeature BASE_TRUNK_CLEARANCE =
             new BaseTrunkClearanceGenFeature(DynamicTreesBetterNether.location("base_trunk_clearance"));
     public static final GenFeature WILLOW_VINES =
             new WillowVinesGenFeature(DynamicTreesBetterNether.location("willow_vines"));

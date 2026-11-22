@@ -85,7 +85,7 @@ dependencies {
     implementation fg.deobf("curse.maven:dynamictrees-252818:${dynamic_trees_file_id}")
     implementation fg.deobf("curse.maven:betternether-forge-1436171:${betternether_file_id}")
     implementation fg.deobf("curse.maven:dynamictreesplus-478155:${dynamic_trees_plus_file_id}")
-    runtimeOnly fg.deobf("curse.maven:bclib-forge-1435106:${bclib_forge_file_id}")
+    implementation fg.deobf("curse.maven:bclib-forge-1435106:${bclib_forge_file_id}")
     runtimeOnly fg.deobf("curse.maven:wunderlib-forge-1435097:${wunderlib_forge_file_id}")
 }
 
@@ -118,6 +118,7 @@ tasks.withType(Jar).configureEach {
 }
 
 tasks.named('jar') {
+    manifest.attributes('MixinConfigs': 'dtbetternether.mixins.json')
     finalizedBy 'reobfJar'
 }
 
