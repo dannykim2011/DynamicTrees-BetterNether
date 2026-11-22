@@ -1,26 +1,28 @@
 package com.dannykim.dtbetternether.systems.genfeature;
 
 import com.dtteam.dynamictrees.block.branch.BranchBlock;
-import com.dtteam.dynamictrees.block.branch.TrunkShellBlock;
 import com.dtteam.dynamictrees.systems.genfeature.GenFeature;
 import com.dtteam.dynamictrees.systems.genfeature.GenFeatureConfiguration;
 import com.dtteam.dynamictrees.systems.genfeature.context.PostGenerationContext;
-import com.dtteam.dynamictrees.systems.genfeature.context.PostGrowContext;
 import com.dtteam.dynamictrees.systems.genfeature.context.PreGenerationContext;
-import com.dtteam.dynamictrees.tree.TreeHelper;
+import com.dtteam.dynamictrees.systems.genfeature.context.PostGrowContext;
+import java.lang.ref.WeakReference;
+import java.util.HashMap;
+import java.util.Map;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.WorldGenLevel;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockState;
 
-import java.util.ArrayDeque;
-import java.util.HashSet;
-import java.util.Set;
 
 public final class BaseTrunkClearanceGenFeature extends GenFeature {
+    private record Removed(BlockState state, BlockState below) {}
+    private record ClearedBlocks(WeakReference<LevelAccessor> level, BlockPos root, Map<BlockPos, Removed> positions) {}
+    private final ThreadLocal<ClearedBlocks> pending = new ThreadLocal<>();
+
     public BaseTrunkClearanceGenFeature(final ResourceLocation registryName) {
         super(registryName);
     }
@@ -30,114 +32,78 @@ public final class BaseTrunkClearanceGenFeature extends GenFeature {
     }
 
     @Override
-    protected BlockPos preGenerate(final GenFeatureConfiguration configuration,
-                                   final PreGenerationContext context) {
-        clearForRadius(context.level(), context.pos(), context.radius());
-        return context.pos();
+    protected BlockPos preGenerate(GenFeatureConfiguration configuration, PreGenerationContext context) {
+        pending.remove();
+        if (!context.isWorldGen()) return context.pos();
+        final var level = context.level();
+        final BlockPos root = context.pos();
+        pending.set(new ClearedBlocks(new WeakReference<>(level), root.immutable(), new HashMap<>()));
+        return root;
+    }
+
+    public void rememberRemovedBlock(LevelAccessor level, BlockPos pos) {
+        ClearedBlocks previous = pending.get();
+        if (previous == null || previous.level().get() != level || !level.hasChunkAt(pos)) return;
+        BlockState state = level.getBlockState(pos);
+        if (!state.isAir() && Block.isShapeFullBlock(state.getCollisionShape(level, pos))) {
+            previous.positions().putIfAbsent(pos.immutable(), new Removed(state, level.getBlockState(pos.below())));
+        }
+    }
+
+    private boolean restoreSurface(PostGenerationContext context) {
+        final ClearedBlocks previous = pending.get();
+        pending.remove();
+        if (previous == null || previous.level().get() != context.level() || !previous.root().equals(context.pos())
+                || !(context.level() instanceof WorldGenLevel world)) return false;
+        boolean changed = false;
+        final Map<Long, BlockPos> lowest = new HashMap<>();
+        final Map<Long, BlockPos> highest = new HashMap<>();
+        for (BlockPos pos : previous.positions().keySet()) {
+            long column = BlockPos.asLong(pos.getX(), 0, pos.getZ());
+            if (!lowest.containsKey(column) || pos.getY() < lowest.get(column).getY()) lowest.put(column, pos);
+            if (!highest.containsKey(column) || pos.getY() > highest.get(column).getY()) highest.put(column, pos);
+        }
+        for (long column : lowest.keySet()) {
+            BlockPos removed = lowest.get(column);
+            Removed original = previous.positions().get(removed);
+            BlockPos target = removed.below();
+            BlockState cover = world.getBlockState(removed);
+            if (cover.equals(original.state()) || !world.getBlockState(target).equals(original.below())
+                    || Block.isFaceFull(cover.getShape(world, removed), Direction.DOWN)) continue;
+            BlockState replacement = previous.positions().get(highest.get(column)).state();
+            changed |= world.setBlock(target, replacement, Block.UPDATE_CLIENTS);
+        }
+        return changed;
     }
 
     @Override
     protected boolean postGenerate(final GenFeatureConfiguration configuration,
                                    final PostGenerationContext context) {
-        return clearAndReconcileTrunk(
-                context.level(), context.pos(), context.pos().above(), context.radius());
+        boolean changed = reconcileTrunk(context.level(), context.pos().above());
+        return restoreSurface(context) || changed;
     }
 
     @Override
     protected boolean postGrow(final GenFeatureConfiguration configuration, final PostGrowContext context) {
-        return clearAndReconcileTrunk(context.level(), context.pos(), context.treePos(), 0);
+        return reconcileTrunk(context.level(), context.treePos());
     }
 
-    private static boolean clearAndReconcileTrunk(final LevelAccessor level, final BlockPos rootPos,
-                                                  final BlockPos treePos, final int generatedRadius) {
-        final BlockState baseState = level.getBlockState(treePos);
-        final int baseRadius = TreeHelper.getRadius(level, treePos);
-        int upperRadius = 0;
-        for (int y = 0; y <= 4; y++) {
-            upperRadius = Math.max(upperRadius,
-                    TreeHelper.getRadius(level, treePos.above(y)));
-        }
-        final int requiredRadius = Math.max(generatedRadius, Math.max(baseRadius, upperRadius));
-        boolean changed = clearForRadius(level, rootPos, requiredRadius);
-        if (requiredRadius > baseRadius && baseState.getBlock() instanceof BranchBlock branch) {
-            branch.setRadius(level, treePos, requiredRadius, null);
-            changed = true;
-        }
-        changed |= clearConnectedThickTrunk(level, treePos);
-        return changed;
-    }
+    private static boolean reconcileTrunk(final LevelAccessor level, final BlockPos base) {
+        if (!(level.getBlockState(base).getBlock() instanceof BranchBlock trunk)) return false;
+        BlockPos top = base;
+        while (level.getBlockState(top.above()).is(trunk)) top = top.above();
 
-    private static boolean clearConnectedThickTrunk(final LevelAccessor level, final BlockPos treePos) {
-        final BlockState startState = level.getBlockState(treePos);
-        if (!(startState.getBlock() instanceof BranchBlock startBranch)) return false;
-
-        final ArrayDeque<BlockPos> pending = new ArrayDeque<>();
-        final Set<BlockPos> visited = new HashSet<>();
-        pending.add(treePos.immutable());
+        int aboveRadius = 0;
         boolean changed = false;
-
-        while (!pending.isEmpty()) {
-            final BlockPos current = pending.removeFirst();
-            if (!visited.add(current)) continue;
-
-            final BlockState state = level.getBlockState(current);
-            if (!(state.getBlock() instanceof BranchBlock branch)
-                    || branch.getFamily() != startBranch.getFamily()) {
-                continue;
+        for (BlockPos pos = top; pos.getY() >= base.getY(); pos = pos.below()) {
+            int radius = trunk.getRadius(level.getBlockState(pos));
+            if (aboveRadius > 8 && aboveRadius > radius) {
+                int actual = trunk.setRadius(level, pos, aboveRadius, null);
+                changed |= radius != actual;
+                radius = actual;
             }
-
-            final int radius = branch.getRadius(state);
-            if (radius <= 8) continue;
-            changed |= clearShellAt(level, current, radius);
-
-            for (final Direction direction : Direction.values()) {
-                final BlockPos next = current.relative(direction);
-                if (!visited.contains(next)) pending.addLast(next.immutable());
-            }
+            aboveRadius = radius;
         }
         return changed;
-    }
-
-    private static boolean clearShellAt(final LevelAccessor level, final BlockPos branchPos,
-                                        final int radius) {
-        final int shellRange = Math.max(1, (radius - 1) / 8);
-        boolean changed = false;
-        for (int x = -shellRange; x <= shellRange; x++) {
-            for (int z = -shellRange; z <= shellRange; z++) {
-                if (x == 0 && z == 0) continue;
-                final BlockPos pos = branchPos.offset(x, 0, z);
-                final BlockState state = level.getBlockState(pos);
-                if (!isBlockingDecoration(state)) continue;
-                level.setBlock(pos, Blocks.AIR.defaultBlockState(), Block.UPDATE_ALL);
-                changed = true;
-            }
-        }
-        return changed;
-    }
-
-    private static boolean clearForRadius(final LevelAccessor level, final BlockPos rootPos,
-                                          final int radius) {
-        if (radius <= 8) return false;
-        final int shellRange = Math.max(1, (radius - 1) / 8);
-        boolean changed = false;
-        for (int y = 1; y <= shellRange; y++) {
-            for (int x = -shellRange; x <= shellRange; x++) {
-                for (int z = -shellRange; z <= shellRange; z++) {
-                    final BlockPos pos = rootPos.offset(x, y, z);
-                    final BlockState state = level.getBlockState(pos);
-                    if (!isBlockingDecoration(state)) continue;
-                    level.setBlock(pos, Blocks.AIR.defaultBlockState(), Block.UPDATE_ALL);
-                    changed = true;
-                }
-            }
-        }
-        return changed;
-    }
-
-    private static boolean isBlockingDecoration(final BlockState state) {
-        return !state.isAir()
-                && state.getFluidState().isEmpty()
-                && !(state.getBlock() instanceof BranchBlock)
-                && !(state.getBlock() instanceof TrunkShellBlock);
     }
 }

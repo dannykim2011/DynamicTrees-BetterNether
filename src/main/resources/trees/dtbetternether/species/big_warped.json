@@ -43,7 +43,6 @@
         "mound_cutoff_radius": 999
       }
     },
-    "clear_volume",
     {
       "name": "dtbetternether:exposed_shroomlight",
       "properties": {

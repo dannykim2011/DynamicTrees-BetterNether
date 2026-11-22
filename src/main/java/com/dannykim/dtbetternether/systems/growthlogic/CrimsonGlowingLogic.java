@@ -6,75 +6,61 @@ import com.dtteam.dynamictrees.systems.growthlogic.context.DirectionManipulation
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 
-/**
- * BetterNether template-derived growth for crimson glow trees.
- *
- * The original crimson_glow_tree_01..04 templates are not capped fungi. They
- * are short crimson stem/hyphae skeletons with shroomlights as the leaf mass:
- * wood is concentrated at y=0..8 and already leans outward from the bottom.
- * Shroomlights begin at y=5..7, peak at y=7..10, and taper to a small knot by
- * y=13. The shape is therefore a low diagonal crimson skeleton with glowing
- * shroomlight tips, not a broad wart canopy.
- */
 public final class CrimsonGlowingLogic extends GrowthLogicKit {
     public CrimsonGlowingLogic(final ResourceLocation name) {
         super(name);
     }
 
+    // Paths start at the soil. Each step follows the stem or supports a shroomlight cluster.
+    // The four rows correspond to BetterNether crimson_glow_tree_01 through _04.
+    private static final String[][] FORMS = {
+            {"UUUSUUUWUUUU", "UUUSUUUWUUSEU"},
+            {"UUUNUUEUUU"},
+            {"UUUNUUEUEUEUUUU", "UUUNUUWSUUSUU"},
+            {"UUUUUUU"}
+    };
+
     @Override
     public int[] populateDirectionProbabilityMap(final GrowthLogicKitConfiguration cfg,
-                                                  final DirectionManipulationContext ctx) {
-        final int[] map = new int[6];
-        final int y = ctx.signal().delta.getY();
-        final int x = ctx.signal().delta.getX();
-        final int z = ctx.signal().delta.getZ();
-        final int spread = Math.abs(x) + Math.abs(z);
-        final boolean horizontal = ctx.signal().dir.getAxis().isHorizontal();
-
-        if (y < 3 && spread <= 2) {
-            map[Direction.UP.ordinal()] = spread == 0 ? 30 : 20;
-            for (final Direction d : Direction.Plane.HORIZONTAL) {
-                map[d.ordinal()] = spread == 0 ? 8 : radialRibBias(d, x, z, 9);
-            }
-            if (horizontal && spread < 2) {
-                map[ctx.signal().dir.ordinal()] += 8;
-            }
-        } else if (y < 7 && spread <= 4) {
-            map[Direction.UP.ordinal()] = spread <= 1 ? 18 : 8;
-            for (final Direction d : Direction.Plane.HORIZONTAL) {
-                map[d.ordinal()] = radialRibBias(d, x, z, spread <= 2 ? 15 : 6);
-            }
-            if (horizontal) {
-                map[ctx.signal().dir.ordinal()] += spread < 4 ? 18 : 4;
-            }
-        } else if (y < 10 && spread <= 4) {
-            map[Direction.UP.ordinal()] = spread <= 1 ? 7 : 0;
-            for (final Direction d : Direction.Plane.HORIZONTAL) {
-                map[d.ordinal()] = spread <= 2 ? radialRibBias(d, x, z, 18) : radialRibBias(d, x, z, 5);
-            }
-            if (horizontal && spread < 4) {
-                map[ctx.signal().dir.ordinal()] += 14;
-            }
-        } else if (y < 14 && spread <= 3) {
-            map[Direction.UP.ordinal()] = spread == 0 ? 4 : 0;
-            for (final Direction d : Direction.Plane.HORIZONTAL) {
-                map[d.ordinal()] = spread <= 2 ? radialRibBias(d, x, z, 4) : 0;
-            }
-            if (horizontal && spread < 3) {
-                map[ctx.signal().dir.ordinal()] += 4;
+                                                 final DirectionManipulationContext ctx) {
+        final int[] weights = new int[6];
+        final var signal = ctx.signal();
+        final int seed = Long.hashCode(signal.rootPos.asLong() * 0x9E3779B97F4A7C15L);
+        final String[] paths = FORMS[seed & 3];
+        final int rotation = (seed >>> 2) & 3;
+        // Shift the first bend and vary the tip height without moving the fork on either arm.
+        final int stemOffset = ((seed >>> 4) & 3) - 1;
+        final int crownOffset = ((seed >>> 6) & 3) - 1;
+        for (final String path : paths) {
+            int x = 0, y = 0, z = 0;
+            for (int i = 0; i < path.length() + stemOffset + crownOffset; i++) {
+                final int index = i - stemOffset;
+                final char axis = index < 0 || index >= path.length() ? 'U' : path.charAt(index);
+                Direction step = switch (axis) {
+                    case 'N' -> Direction.NORTH;
+                    case 'S' -> Direction.SOUTH;
+                    case 'E' -> Direction.EAST;
+                    case 'W' -> Direction.WEST;
+                    default -> Direction.UP;
+                };
+                if (step != Direction.UP) {
+                    if ((seed & 256) != 0 && step.getAxis() == Direction.Axis.X) step = step.getOpposite();
+                    for (int turn = 0; turn < rotation; turn++) step = step.getClockWise();
+                }
+                if (x == signal.delta.getX() && y == signal.delta.getY() && z == signal.delta.getZ()) {
+                    weights[step.ordinal()]++;
+                    break;
+                }
+                x += step.getStepX();
+                y += step.getStepY();
+                z += step.getStepZ();
             }
         }
-
-        map[ctx.signal().dir.getOpposite().ordinal()] = 0;
-        return map;
-    }
-
-    private static int radialRibBias(final Direction direction, final int x, final int z, final int base) {
-        if (direction == Direction.EAST && x > 0) return base + 3;
-        if (direction == Direction.WEST && x < 0) return base + 3;
-        if (direction == Direction.SOUTH && z > 0) return base + 3;
-        if (direction == Direction.NORTH && z < 0) return base + 3;
-        if (x == 0 && z == 0) return base;
-        return Math.max(1, base - 4);
+        // An exhausted signal cannot continue past the terminal crown on a later growth pulse.
+        if (java.util.Arrays.stream(weights).sum() == 0) {
+            signal.energy = 0;
+            weights[Direction.UP.ordinal()] = 1;
+        }
+        return weights;
     }
 }

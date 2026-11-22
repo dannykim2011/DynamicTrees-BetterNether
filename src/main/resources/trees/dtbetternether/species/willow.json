@@ -33,7 +33,6 @@
         "min_trunk_radius": 13
       }
     },
-    "clear_volume",
     {
       "name": "dtbetternether:willow_vines",
       "properties": {

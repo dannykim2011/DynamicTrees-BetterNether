@@ -1,0 +1,7 @@
+{
+  "primitive_soil": "betternether:bleached_gloomsculk",
+  "acceptable_soils": [
+    "dtbn_gloomwood"
+  ],
+  "substitute_soil": "netherrack"
+}

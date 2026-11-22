@@ -79,6 +79,14 @@
     {
       "type": "dynamictrees:thick_branch_rings",
       "resource": "betternether:block/willow_stripped_log_top"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
+      "resource": "betternether:block/gloomwood_log_top"
+    },
+    {
+      "type": "dynamictrees:thick_branch_rings",
+      "resource": "betternether:block/gloomwood_stripped_log_top"
     }
   ]
 }
