@@ -1,0 +1,7 @@
+{
+  "primitive_soil": "minecraft:sculk",
+  "acceptable_soils": [
+    "dtbn_gloomwood"
+  ],
+  "substitute_soil": "netherrack"
+}

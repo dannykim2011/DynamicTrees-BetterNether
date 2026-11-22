@@ -1,5 +1,9 @@
 [
   {
+    "select": { "name": "betternether:gloomwood" },
+    "cancellers": { "type": "dtbetternether:gloomwood" }
+  },
+  {
     "__comment": "Replace BetterNether static tree features while retaining its original mushroom generation.",
     "select": {
       "name": "betternether:.*",

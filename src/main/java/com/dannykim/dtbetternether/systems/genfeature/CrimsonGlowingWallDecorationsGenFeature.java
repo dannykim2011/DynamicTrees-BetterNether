@@ -103,12 +103,14 @@ public final class CrimsonGlowingWallDecorationsGenFeature extends GenFeature {
             for (int x = -horizontalRange; x <= horizontalRange; x++) {
                 for (int z = -horizontalRange; z <= horizontalRange; z++) {
                     final BlockPos support = rootPos.offset(x, y, z);
-                    if (!isSupport(configuration, level.getBlockState(support))) {
+                    final BlockState state = level.getBlockState(support);
+                    if (!isSupport(configuration, state)) {
                         continue;
                     }
                     for (final Direction direction : Direction.Plane.HORIZONTAL) {
                         final BlockPos pos = support.relative(direction);
-                        if (level.isEmptyBlock(pos)) {
+                        if (level.isEmptyBlock(pos) && (state.is(configuration.get(TARGET_LEAVES))
+                                || state.isFaceSturdy(level, support, direction))) {
                             candidates.add(new Candidate(pos.immutable(), direction));
                         }
                     }

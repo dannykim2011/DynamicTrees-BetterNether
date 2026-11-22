@@ -33,8 +33,7 @@
         "min_trunk_radius": 13
       }
     },
-    "mound",
-    "clear_volume"
+    "mound"
   ],
   "world_gen_acceptable_soils": [
     "dtbn_wart"

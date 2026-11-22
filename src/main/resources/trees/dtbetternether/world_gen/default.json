@@ -202,5 +202,18 @@
       "chance": 1.0,
       "forestness": 1.0
     }
+  },
+  {
+    "select": {
+      "name": "betternether:gloomwood"
+    },
+    "apply": {
+      "species": "dtbetternether:gloomwood",
+      "density": [
+        0.58
+      ],
+      "chance": 0.8,
+      "forestness": 0.8
+    }
   }
 ]

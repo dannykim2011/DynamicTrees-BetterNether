@@ -1,0 +1,12 @@
+{
+    "variants":  {
+                     "":  {
+                              "type":  "dynamictrees:branch",
+                              "family":  "dtbetternether:gloomwood",
+                              "textures":  {
+                                               "bark":  "betternether:block/gloomwood_stripped_log_side",
+                                               "rings":  "betternether:block/gloomwood_stripped_log_top"
+                                           }
+                          }
+                 }
+}
